@@ -1,0 +1,12 @@
+assert-root-hash	sha-256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+add-item	{"name":"Great Britain","official-name":"Great Britain","uk":"GBN"}
+add-item	{"name":"England","official-name":"England","uk":"ENG"}
+add-item	{"name":"Scotland","official-name":"Scotland","uk":"SCT"}
+add-item	{"name":"Wales","official-name":"Wales","uk":"WLS"}
+add-item	{"name":"Northern Ireland","official-name":"Northern Ireland","uk":"NIR"}
+append-entry	2016-08-04T08:05:35Z	sha-256:ae331e392efae8dbc2d05140954c869f3e8f0d69718fab61c5a3a66ddf665084	GBN
+append-entry	2016-08-04T08:05:35Z	sha-256:3f09f2fa080bc11c2ee57c51c38f4e89ef29ae0d4e2e41a35ad5a55fe144ed80	ENG
+append-entry	2016-08-04T08:05:35Z	sha-256:717ff8853e3e1e8e6e59c60c60568ba44094587baf54fd9d6138add35e4a4cb7	SCT
+append-entry	2016-08-04T08:05:35Z	sha-256:85127d66ea8bdc5a7818cff663473a92483d8588671998b9751ecc17a22e1a90	WLS
+append-entry	2016-08-04T08:05:35Z	sha-256:fa47b446ccd73ad296e54dc01784f18a29309c368bf0c1149e49601dc6cc4c9f	NIR
+assert-root-hash	sha-256:7b7d78734eb391c5f4a3007816f43f1234a7ee6df7df4aef0f081cbba6a4fc40
