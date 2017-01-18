@@ -276,7 +276,7 @@
   (assert (string? welsh-name))
 
   (let ((node (state-ref country-id state)))
-    (assert node)
+    (assert node (conc "welsh: No node for " country-id))
     (assert (not (node-ref '(names cy) node)))
 
     (state-update
@@ -293,7 +293,7 @@
   (assert (list?   nyms))
 
   (let ((node (state-ref country-id state)))
-    (assert node)
+    (assert node (conc "nyms: No node for " country-id))
 
     (fold
       (lambda (nym state)
