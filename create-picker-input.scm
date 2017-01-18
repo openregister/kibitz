@@ -332,7 +332,7 @@
 
 (define state    (make-parameter (make-state)))
 
-(define (update-state-from-records state canonical register-name records)
+(define (add-nodes-from-records state canonical register-name records)
   (assert (string? register-name))
 
   (let ((register-symbol (string->symbol register-name)))
@@ -345,26 +345,21 @@
 	    (warn "Item key for record ~S in ~S does not match record key: might be an index." pk register-name))
 	  (if (state-ref node-id s)
 	    (error "Node for ~S already exists in graph." node-id))
-	  (let* ((s ; add the node to the graph
-		   (state-update
-		     node-id
-		     (update-node
-		       (make-node)
-		       name-en-GB:     (item-ref 'name item)
-		       canonical-mask: (if canonical 1 0)
-		       canonical:      canonical
-		       stable-name:    #t)
-		     s))
-		 (s ; add the official-name if it's different
-		   (if (equal? (item-ref 'official-name item) (item-ref 'name item))
-		     s
-		     (add-nym node-id (item-ref 'official-name item) s)))
+	  (let* ((s (add-node
+		      s                              ; state
+		      canonical                      ; canonical
+		      node-id                        ; node-id
+		      (item-ref 'name item)          ; name-en-GB
+		      (item-ref 'official-name item) ; official-name
+		      (if canonical 1 0)             ; canonical-mask
+		      #t))                           ; stable-name
 		 (s ; add the country code
 		   (add-nym node-id (item-ref register-symbol item) s)))
 	    s)))
       state
       records)))
 
+(define (add-node state canonical node-id name-en-GB official-name canonical-mask stable-name)
 (define (annotate-country-with-constituents state country-id register-name records)
   (assert (string? register-name))
   (assert (string? country-id))
@@ -386,6 +381,23 @@
       state
       records)))
 
+  (let* ((s state)
+	 (s ; add the node to the graph
+	   (state-update
+	     node-id
+	     (update-node
+	       (make-node)
+	       name-en-GB:     name-en-GB
+	       canonical-mask: canonical-mask
+	       canonical:      canonical
+	       stable-name:    stable-name)
+	     s))
+	 (s ; add the official-name if it's different
+	   (if (or (not official-name) (equal? official-name name-en-GB))
+	     s
+	     (add-nym node-id official-name s))))
+    s))
+
 
 
 (define uk-records (rsf->records "data/uk.discovery.20170112.1.rsf"))
@@ -394,7 +406,7 @@
 (state
   (fold
     (lambda (r s)
-      (update-state-from-records
+      (add-nodes-from-records
 	s
 	(second r)  ; canonical?
 	(first r)   ; register-name
