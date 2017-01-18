@@ -67,7 +67,7 @@
   (if-let* ((_ (string? x))
 	    (y (string-split x ":"))
 	    (_ (= 2 (length y)))
-	    (_ (member (car y) '("country" "territory"))))
+	    (_ (member (car y) '("country" "territory" "uk" "david"))))
     x
     (abort (conc x "is not a curie!"))))
 
@@ -76,6 +76,14 @@
   (map
     string-trim-both
     (string-split x ",\n" #f)))
+
+(define (curie-list x)
+  (assert (string? x))
+  (map
+    curie
+    (map
+      string-trim-both
+      (string-split x ",\n" #f))))
 
 (define (empty x)
   (if (equal? "" x)
@@ -303,6 +311,22 @@
       nyms)))
 
 
+(define (child-of state country-id col-name parents)
+  (assert (curie country-id))
+  (assert (list? parents))
+
+  (let ((node (state-ref country-id state)))
+    (assert node (conc "child-of: No node for " country-id))
+
+    (fold
+      (lambda (parent state)
+	(assert (curie parent))
+	(assert (state-ref country-id state) (conc "child-of: No node for " parent))
+	(add-edge country-id parent state))
+      state
+      parents)))
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Field handler specification
@@ -313,10 +337,11 @@
 (define col-spec
   `(("Andy's key"               ,curie       ())
     ("Type"                     ,ignore      ())
-    ("Name"                     ,ignore      ())
+    ("Name"                     ,string      ())
     ("Official-name"            ,ignore      ())
     ("Code"                     ,ignore      ())
     ("Territory belongs to"     ,ignore      ())
+    ("Territory belongs to code",curie-list  (,child-of))
     ("Welsh"                    ,string      (,welsh))
     ("Passport applicant typos" ,string-list (,nyms))
     ("Endonyms"                 ,string-list (,nyms))
@@ -409,6 +434,21 @@
     ;(pp row)
     ;(newline)
     (let* ((row-name (row-key-convert (alist-ref row-key row equal?)))
+	   (the-state (state))
+	   (the-state
+	     ; Ensure that this node exists in the graph
+	     (if (state-ref row-name the-state)
+	       the-state
+	       (begin
+		 (warn "Found node in spreadsheet that does not appear in the registers: ~S!" row-name)
+		 (add-node
+		   the-state
+		   #f ; canonical
+		   row-name ; node-id
+		   ((col-spec-convert (col-spec-ref "Name" col-spec))          (alist-ref "Name" row equal?)) ; name-en-GB
+		   ((col-spec-convert (col-spec-ref "Official-name" col-spec)) (alist-ref "Name" row equal?)) ; official-name
+		   0; canonical-mask
+		   #f)))); stable-name
 	   (the-state
 	     (fold ; process each field in the row
 	       (lambda (col state)
@@ -423,7 +463,7 @@
 		       (action state row-name col-name col-value))
 		     state
 		     actions)))
-	       (state)
+	       the-state
 	       row)))
       (state the-state)))
   next-location)
