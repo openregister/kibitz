@@ -1,7 +1,7 @@
 .PHONY: all clean mrproper
 
 all:
-	csi -s create-picker-input.scm data/Country\ picker\ data\ -\ Data.20170111.2.csv > out.scm
+	csi -s create-picker-input.scm data/Country\ picker\ data\ -\ Data.20170118.1.csv > out.scm
 	csi -s visualise-picker-input.scm < out.scm
 	csi -s picker-input-to-json.scm < out.scm > out.json
 	du -hs out.*
