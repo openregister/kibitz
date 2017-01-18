@@ -360,27 +360,6 @@
       records)))
 
 (define (add-node state canonical node-id name-en-GB official-name canonical-mask stable-name)
-(define (annotate-country-with-constituents state country-id register-name records)
-  (assert (string? register-name))
-  (assert (string? country-id))
-  (assert (state-ref country-id state))
-
-  (let ((register-symbol (string->symbol register-name)))
-    (fold
-      (lambda (v s)
-	(let ((pk      (car v))
-	      (item    (cdr v))
-	      (node-id (conc register-name ":" (car v))))
-	  (if (not (equal? pk (item-ref register-symbol item)))
-	    (warn "Item key for record ~S in ~S does not match record key: might be an index." pk register-name))
-	  (if (not (state-ref node-id s))
-	    (error "Node for ~S does not exist in graph." node-id))
-	  (let* ((s ; add an edge between the node that represents the item in the register and the country-id
-		   (add-edge node-id country-id s)))
-	    s)))
-      state
-      records)))
-
   (let* ((s state)
 	 (s ; add the node to the graph
 	   (state-update
@@ -417,12 +396,6 @@
       ("uk"        #f ,uk-records))))
 
 ; Annotate country:gb with the contents of the uk register
-(state
-  (annotate-country-with-constituents
-    (state)
-    "country:GB"
-    "uk"
-    uk-records))
 
 
 
