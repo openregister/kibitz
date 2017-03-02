@@ -1,5 +1,5 @@
-; csi -s create-picker-input.scm data/Country\ picker\ data\ -\ Data.20170111.2.csv
-; csi -s create-picker-input.scm data/Country\ picker\ data\ -\ Data.20170111.2.csv | csi -s ./visualise-picker-input.scm
+; csi -s create-picker-input.scm data/Location\ picker\ data\ -\ Data.csv
+; csi -s create-picker-input.scm data/Location\ picker\ data\ -\ Data.csv | csi -s ./visualise-picker-input.scm
 
 (require-extension utf8)
 (use srfi-1)
@@ -347,7 +347,8 @@
     ("Endonyms"                 ,string-list (,nyms))
     ("Baymard synonyms"         ,string-list (,nyms))
     ("\"The\" removed"          ,ignore      ())
-    ("Words API synonyms"       ,string-list (,nyms))))
+    ("Words API synonyms"       ,string-list (,nyms))
+    ("FCO Synonyms"             ,string-list (,nyms))))
 
 
 
