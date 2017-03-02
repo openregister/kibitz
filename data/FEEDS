@@ -4,3 +4,7 @@ https://country.register.gov.uk/download-rsf
 https://territory.register.gov.uk/download-rsf
 https://uk.discovery.openregister.org/download-rsf
 
+https://docs.google.com/spreadsheets/d/1Wjzs9S6o604a2LpZEJv9oFQRBf6lPDP9GD9xf4xTDpo/edit#gid=1557267032
+	Export this from Google Sheets as CSV and save the resulting file as
+	"Location picker data - Data.csv" in the data/ directory.
+

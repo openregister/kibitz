@@ -404,7 +404,7 @@
 
 
 
-(define uk-records (rsf->records "data/uk.discovery.20170112.1.rsf"))
+(define uk-records (rsf->records "data/uk.rsf"))
 
 ; Import the country, territories & uk registers.
 (state
@@ -416,8 +416,8 @@
 	(first r)   ; register-name
 	(third r))) ; records
     (state)
-    `(("country"   #t ,(rsf->records "data/country.beta.20170112.1.rsf"))
-      ("territory" #t ,(rsf->records "data/territory.beta.20170112.1.rsf"))
+    `(("country"   #t ,(rsf->records "data/country.rsf"))
+      ("territory" #t ,(rsf->records "data/territory.rsf"))
       ("uk"        #f ,uk-records))))
 
 ; Annotate country:gb with the contents of the uk register
