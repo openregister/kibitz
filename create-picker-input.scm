@@ -438,8 +438,6 @@
 
 
 
-(define uk-records (rsf->records "data/uk.rsf"))
-
 ; Import the country, territories & uk registers.
 (state
   (fold
@@ -452,10 +450,7 @@
     (state)
     `(("country"   #t ,(rsf->records "data/country.rsf"))
       ("territory" #t ,(rsf->records "data/territory.rsf"))
-      ("uk"        #f ,uk-records))))
-
-; Annotate country:gb with the contents of the uk register
-
+      ("uk"        #f ,(rsf->records "data/uk.rsf")))))
 
 
 (define row-key "Andy's key")
