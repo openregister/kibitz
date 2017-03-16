@@ -1,0 +1,191 @@
+
+  kibitz - gov.uk Picker Configuration Tools
+  ==========================================
+
+  Copyright (C) 2017, Andy Bennett, Crown Copyright (Government Digital Service).
+
+ 1. Introduction
+
+	gov.uk Open Registers are a way of expressing an authoritative list
+	that you can trust. This distribution is a set of tools for combining
+	Register data with other data in order to produce a configration file
+	that can be used to drive an interactive, multi-lingual, Location
+	Picker that a user can use to easily select a valid Location from a
+	list.
+
+	There are a number of files supplied:
+
+	+ picker-input.sample.scm
+
+	    This file documents the format and structure of the configuration
+	    file produced. The file starts with some description and then
+	    provides some examples. Finally, the file includes some code so
+	    that the whole thing can be interpreted by "csi" in order to
+	    produce the examples in JSON format.
+
+	+ picker-input.sample.json
+
+	    This file shows the examples from picker-input.sample.scm in JSON
+	    format. This is an example of the actual configuration file that
+	    you would provide to the Location Picker.
+
+	+ create-picker-input.scm
+
+	    This is the main event! This script takes the Registers in .rsf
+	    format and the spreadsheet in .csv format and produces a Location
+	    Picker Configuration in .scm format.
+	    This script does all the hard work to transform the data into the
+	    format described in picker-input.sample.scm.
+
+	+ picker-input-to-json.scm
+
+	    This file is a copy of the code in picker-input.sample.scm that can
+	    be used to convert a configuration file in .scm format to a
+	    configuration file in .json format.
+
+	+ visualise-picker-input.scm
+
+	    This script can be used to convert a Location Picker Configuration
+	    in .scm format into a .pdf file that visualises the configuration
+	    for human consumption. The files produced by this are suitable for
+	    printing on printers that can use incredibly large paper. This tool
+	    is useful for debugging the decisions made by the Location Picker.
+
+	+ fetch-register-feeds.sh
+
+	    This script updates the .rsf files in the data/ directory.
+	    The .rsf files contain a copy of the Register data.
+
+	+ data/Location picker data - Data.csv
+
+	    This file contains the non-Register data required to build a usable
+	    picker. It contains things such as synonyms, endonyms and links
+	    between the entites described by the Register.
+
+	+ data/country.rsf
+
+	    This is the Country Register in .rsf format.
+
+	+ data/territory.rsf
+
+	    This is the Territory Register in .rsf format.
+
+	+ data/uk.rsf
+
+	    This is the UK Register in .rsf format.
+
+	+ data/FEEDS
+
+	    This file documents where all the other files in data/ come from.
+
+	+ Makefile
+
+	    Here we script the tools to produce the outputs.
+
+	The whole package is distributed under an MIT license and as such is
+	free to use and modify as long as you agree to its terms.
+
+	Note: Should you have any trouble in setting up and using these tools,
+	please feel free to contact me, Andy Bennett at either
+	andyjpb@digital.cabinet-office.gov.uk or, alternatively at
+	andyjpb@ashurst.eu.org.
+
+
+ 2. Installation
+
+	The tools in this package can be run straight away; they do not need to
+	be built or installed. However, they do have a number of dependencies
+	which need to be satisfied.
+
+	The tools in this package requires GNU Make and a recent CHICKEN. morc
+	(from the orc distribution) is also required in order to process the
+	Register data. morc has the same requirements: GNU Make and a recent
+	CHICKEN.
+
+	CHICKEN can be found at http://www.call-cc.org/ and can be build on
+	Linux, MacOS X and Windows.
+
+	The tools rely on a number of "eggs" from the CHICKEN ecosystem.
+	Install them thus:
+
+	    chicken-install medea csv-xml clojurian list-utils vector-lib utf8-srfi-13
+
+	The visualisation tools require Graphviz.
+
+
+ 3. Usage
+
+	In order to build a Location Picker Configuration using the supplied
+	data, invoke make thus:
+
+	    make all
+
+	This will produce three files:
+
+	+ out.scm
+
+	    This is the Location Picker Configuration in .scm format.
+
+	+ out.json
+
+	    This is the Location Picker Configuration in .json format. This
+	    file is suitable for loading into the Javascript part of the
+	    Location Picker.
+
+	+ out.pdf
+
+	    This is the Location Picker Configuration rendered into a graphical
+	    format that can be understood by a human. Use this for debugging
+	    the decisions made by the Location Picker.
+
+	The Location Picker Configuration uses a local copy of data from three
+	registers: the Country Register, the Territory Register and the UK
+	Register. You can update the local copies of the Registers like this:
+
+	    ./fetch-register-feeds.sh
+
+	This will update the .rsf files in the data/ directory. Once you have
+	updated the Register data, you can regenerate the Location Picker
+	Configuration by using "make" as described above.
+
+	The Location Picker Configuration is customised by a spreadsheet
+	containing all of the non-Register data such as synonyms, endonyms and
+	mappings between locations. For example, Antarctica is a location in
+	the Territory Register but it is actually claimed by a number of Nation
+	States. The spreadsheet documents these claims such that when a user
+	types "Antarctica" into the Location Picker they are offered a choice
+	of one of the locations that exist there as well as an opporunity to
+	choose the Nation States themselves. A link to the original version of
+	this spreadsheet can be found in the data/FEEDS file. Alternatively,
+	you can customise the local copy in data/Location picker data -
+	Data.csv to satisfy your own tastes. If you add columns to this file
+	then you will need to customise the parser in create-picker.input.scm:
+	start with the definition of "col-spec" which declares the name and
+	type of each column as well as what to do with it.
+
+
+ 4. Compatibility notes
+
+	See the documentation in picker-input.sample.scm to learn about how the
+	data has been structured such that it is possible to record telemetry
+	about how the picker is used and then compare the data between
+	different configurations that are produced by the tool. In particular,
+	the "stable-name" property is supplied in order to make these
+	comparisons both possible and easy.
+
+
+ 5. What's next?
+
+        First and foremost, enjoy the tools and use and extend them to build
+        your own pickers that incoporate register data.
+
+	Please feel free to send tools that you build with this so that they
+	can be integrated and distributed with this package.
+
+        Suggestion, extensions and patches are welcome.
+
+        If you have any questions or problems (even the slightest problems, or
+        the most stupid questions), then please feel free to get in touch with
+        me directly using the addresses above. I will try to help you, get you
+        going or point you in the right direction.
+
