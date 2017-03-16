@@ -176,7 +176,8 @@
     (meta  .
 	   ((canonical      . #f)
 	    (canonical-mask . 0)
-	    (stable-name    . #f)))
+	    (stable-name    . #f)
+	    (display-name   . #f)))
     (edges .
 	   ((from . #())))))
 
@@ -199,6 +200,7 @@
 		     (canonical      (node-ref '(meta  canonical)      node))
 		     (canonical-mask (node-ref '(meta  canonical-mask) node))
 		     (stable-name    (node-ref '(meta  stable-name)    node))
+		     (display-name   (node-ref '(meta  display-name)   node))
 		     (edges-from     (node-ref '(edges from)           node)))
 
   (assert (string? name-en-GB))
@@ -206,6 +208,7 @@
   (assert (boolean? canonical))
   (assert (integer? canonical-mask))
   (assert (boolean? stable-name))
+  (assert (boolean? display-name))
   (assert (vector?  edges-from))
   (assert (or (equal? #() edges-from) (vector-fold (lambda (i s v) (and s (string? v))) #t edges-from)))
 
@@ -215,7 +218,8 @@
     (meta  .
 	   ((canonical      . ,canonical)
 	    (canonical-mask . ,canonical-mask)
-	    (stable-name    . ,stable-name)))
+	    (stable-name    . ,stable-name)
+	    (display-name   . ,display-name)))
     (edges .
 	   ((from . ,edges-from)))))
 
@@ -248,16 +252,42 @@
 		    state))))
 
 ; Add a node to the graph that represents a -nym for another node.
-;   for   - The id of the node to add the nym for.
-;   nym   - The English text of the nym.
-;   state - The graph.
-(define (add-nym for nym state)
+;   for          - The id of the node to add the nym for.
+;   nym          - The English text of the nym.
+;   display-name - Whether to display this node to the user.
+;   state        - The graph.
+(define (add-nym for nym display-name state)
   (let* ((nym-id   (conc "nym:" nym))
 	 (nym-node (state-ref nym-id state)))
     (if nym-node
-      (if (equal? (node-ref '(names en-GB) nym-node) nym)
-	(add-edge nym-id for state)
-	(error "Node for ~S already exists but does not match." nym-id))
+      (let ((names-en-GB       (node-ref '(names en-GB)        nym-node))
+	    (meta-display-name (node-ref '(meta  display-name) nym-node)))
+	(cond ; If the node is found, check if it's the same or if it needs to be upgraded to displayable.
+	  ((and ; important parts of node match
+	     (equal? names-en-GB       nym)
+	     (equal? meta-display-name display-name))
+	   ; just add the edge
+	   (add-edge nym-id for state))
+	  ((and ; name matches and current node is displayable
+	     (equal? names-en-GB nym)
+	     meta-display-name
+	     (not display-name))
+	   ; just add the edge
+	   (add-edge nym-id for state))
+	  ((and ; name matches and current node is not displayable
+	     (equal? names-en-GB nym)
+	     (not meta-display-name)
+	     display-name)
+	   ; make it displayable and add the edge
+	   (add-edge nym-id for
+		     (state-update
+		       nym-id
+		       (update-node
+			 nym-node
+			 display-name: display-name)
+		       state)))
+	  (else
+	    (error "Node for ~S already exists but does not match." nym-id))))
       (state-update
 	nym-id
 	(update-node
@@ -266,6 +296,7 @@
 	  canonical-mask: 0
 	  canonical:      #f
 	  stable-name:    #t
+	  display-name:   display-name
 	  edges-from:     `#(,for))
 	state))))
 
@@ -296,19 +327,20 @@
 
 
 ; assume all -nyms are in English, not Welsh
-(define (nyms state country-id col-name nyms)
-  (assert (string? country-id))
-  (assert (list?   nyms))
+(define (nyms #!key (display-name #f))
+  (lambda (state country-id col-name nyms)
+    (assert (string? country-id))
+    (assert (list?   nyms))
 
-  (let ((node (state-ref country-id state)))
-    (assert node (conc "nyms: No node for " country-id))
+    (let ((node (state-ref country-id state)))
+      (assert node (conc "nyms: No node for " country-id))
 
-    (fold
-      (lambda (nym state)
-	(assert (string? nym))
-	(add-nym country-id nym state))
-      state
-      nyms)))
+      (fold
+	(lambda (nym state)
+	  (assert (string? nym))
+	  (add-nym country-id nym display-name state))
+	state
+	nyms))))
 
 
 (define (child-of state country-id col-name parents)
@@ -343,12 +375,12 @@
     ("Territory belongs to"     ,ignore      ())
     ("Territory belongs to code",curie-list  (,child-of))
     ("Welsh"                    ,string      (,welsh))
-    ("Passport applicant typos" ,string-list (,nyms))
-    ("Endonyms"                 ,string-list (,nyms))
-    ("Baymard synonyms"         ,string-list (,nyms))
+    ("Passport applicant typos" ,string-list (,(nyms display-name: #f)))
+    ("Endonyms"                 ,string-list (,(nyms display-name: #t)))
+    ("Baymard synonyms"         ,string-list (,(nyms display-name: #t)))
     ("\"The\" removed"          ,ignore      ())
-    ("Words API synonyms"       ,string-list (,nyms))
-    ("FCO Synonyms"             ,string-list (,nyms))))
+    ("Words API synonyms"       ,string-list (,(nyms display-name: #f)))
+    ("FCO Synonyms"             ,string-list (,(nyms display-name: #t)))))
 
 
 
@@ -378,14 +410,15 @@
 		      (item-ref 'name item)          ; name-en-GB
 		      (item-ref 'official-name item) ; official-name
 		      (if canonical 1 0)             ; canonical-mask
-		      #t))                           ; stable-name
+		      #t                             ; stable-name
+		      #t))                           ; display-name
 		 (s ; add the country code
-		   (add-nym node-id (item-ref register-symbol item) s)))
+		   (add-nym node-id (item-ref register-symbol item) #t s)))
 	    s)))
       state
       records)))
 
-(define (add-node state canonical node-id name-en-GB official-name canonical-mask stable-name)
+(define (add-node state canonical node-id name-en-GB official-name canonical-mask stable-name display-name)
   (let* ((s state)
 	 (s ; add the node to the graph
 	   (state-update
@@ -395,12 +428,13 @@
 	       name-en-GB:     name-en-GB
 	       canonical-mask: canonical-mask
 	       canonical:      canonical
-	       stable-name:    stable-name)
+	       stable-name:    stable-name
+	       display-name:   display-name)
 	     s))
 	 (s ; add the official-name if it's different
 	   (if (or (not official-name) (equal? official-name name-en-GB))
 	     s
-	     (add-nym node-id official-name s))))
+	     (add-nym node-id official-name display-name s))))
     s))
 
 
@@ -449,7 +483,8 @@
 		   ((col-spec-convert (col-spec-ref "Name" col-spec))          (alist-ref "Name" row equal?)) ; name-en-GB
 		   ((col-spec-convert (col-spec-ref "Official-name" col-spec)) (alist-ref "Name" row equal?)) ; official-name
 		   0; canonical-mask
-		   #f)))); stable-name
+		   #f ; stable-name
+		   #t)))) ; display-name
 	   (the-state
 	     (fold ; process each field in the row
 	       (lambda (col state)

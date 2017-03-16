@@ -46,15 +46,24 @@
 ;                            that this node will always be present in all
 ;                            versions and configurations but it does signal
 ;                            that where it does appear, it refers to the same
-;                            entity. The entity refered to by a stable name can
-;                            always be resolved to a record in a Register. It
-;                            is reasonable to assert that stable-name is #t
+;                            entity. The entity refered to by a stable name may
+;                            not always resolve to a record in a Register but,
+;                            where it doesn't, steps have been taken to ensure
+;                            that the entity referred to is, in fact, stable.
+;                            It is reasonable to assert that stable-name is #t
 ;                            when either canonical is #t or canonical-mask is
-;                            non-zero.  Node names should only be
-;                            independently persisted when stable-name is #t.
-;                            Node names with unstable names MUST NOT be
-;                            persisted or transmitted outside the scope of the
-;                            graph described by this data.
+;                            non-zero.  Node names should only be independently
+;                            persisted when stable-name is #t.  Node names with
+;                            unstable names MUST NOT be persisted or
+;                            transmitted outside the scope of the graph
+;                            described by this data.
+;           display-name   - A boolean describing whether the name of this node
+;                            is suitable for displaying to the user of the
+;                            picker. If this field is #t then this node is
+;                            suitable for display. This field is typically #f
+;                            for nodes that provide misspellings or other data
+;                            that is provided in order to increase the matching
+;                            ability of the graph.
 ;   edges - Edges to and from the node. Only the "from" sub-section is required
 ;           to be populated. Edges have no data of their own.
 ;           from - The list of edges that point away from this node to other
@@ -75,7 +84,8 @@
 		   (meta  .
 			  ((canonical . #t)
 			   (canonical-mask . 1)
-			   (stable-name . #t)))
+			   (stable-name . #t)
+			   (display-name . #t)))
 		   (edges .
 			  ((from .
 				 #())))))
@@ -84,7 +94,8 @@
 		      (meta  .
 			     ((canonical . #f)
 			      (canonical-mask . 0)
-			      (stable-name . #f)))
+			      (stable-name . #f)
+			      (display-name . #t)))
 		      (edges .
 			     ((from .
 				    #("country:gb"))))))
@@ -93,7 +104,8 @@
 		      (meta  .
 			     ((canonical . #f)
 			      (canonical-mask . 0)
-			      (stable-name . #f)))
+			      (stable-name . #f)
+			      (display-name . #t)))
 		      (edges .
 			     ((from .
 				    #("country:gb"))))))
@@ -103,7 +115,8 @@
 	       (meta  .
 		      ((canonical . #f)
 		       (canonical-mask . 0)
-		       (stable-name . #t)))
+		       (stable-name . #t)
+		       (display-name . #t)))
 	       (edges .
 		      ((from .
 			     #("country:gb"))))))
@@ -112,7 +125,8 @@
 			(meta  .
 			       ((canonical . #f)
 				(canonical-mask . 0)
-				(stable-name . #f)))
+				(stable-name . #f)
+				(display-name . #t)))
 			(edges .
 			       ((from .
 				      #("uk:nir"))))))
@@ -122,7 +136,8 @@
 	       (meta  .
 		      ((canonical . #f)
 		       (canonical-mask . 0)
-		       (stable-name . #t)))
+		       (stable-name . #t)
+		       (display-name . #t)))
 	       (edges .
 		      ((from .
 			     #("country:gb"))))))
@@ -131,7 +146,8 @@
 			(meta  .
 			       ((canonical . #f)
 				(canonical-mask . 0)
-				(stable-name . #f)))
+				(stable-name . #f)
+				(display-name . #t)))
 			(edges .
 			       ((from .
 				      #("uk:wls"))))))
@@ -141,7 +157,8 @@
 	       (meta  .
 		      ((canonical . #f)
 		       (canonical-mask . 0)
-		       (stable-name . #t)))
+		       (stable-name . #t)
+		       (display-name . #t)))
 	       (edges .
 		      ((from .
 			     #("country:gb"))))))
@@ -150,7 +167,8 @@
 			(meta  .
 			       ((canonical . #f)
 				(canonical-mask . 0)
-				(stable-name . #f)))
+				(stable-name . #f)
+				(display-name . #t)))
 			(edges .
 			       ((from .
 				      #("uk:sct"))))))
@@ -160,7 +178,8 @@
 	       (meta  .
 		      ((canonical . #f)
 		       (canonical-mask . 0)
-		       (stable-name . #t)))
+		       (stable-name . #t)
+		       (display-name . #t)))
 	       (edges .
 		      ((from .
 			     #("country:gb"))))))
@@ -169,17 +188,39 @@
 			(meta  .
 			       ((canonical . #f)
 				(canonical-mask . 0)
-				(stable-name . #f)))
+				(stable-name . #f)
+				(display-name . #t)))
 			(edges .
 			       ((from .
 				      #("uk:eng"))))))
+  ("synonym:eng:1" . ((names .
+			     ((en-GB . "Enkalnd")))
+		      (meta  .
+			     ((canonical . #f)
+			      (canonical-mask . 0)
+			      (stable-name . #f)
+			      (display-name . #f)))
+		      (edges .
+			     ((from .
+				    #("uk:eng"))))))
+  ("spelling:eng:ingland" . ((names .
+				    ((en-GB . "Ingland")))
+			     (meta  .
+				    ((canonical . #f)
+				     (canonical-mask . 0)
+				     (stable-name . #t)
+				     (display-name . #f)))
+			     (edges .
+				    ((from .
+					   #("uk:eng"))))))
   ("uk:gbn" . ((names .
 		      ((en-GB . "Great Britain")
 		       (cy    . "Prydain Fawr")))
 	       (meta  .
 		      ((canonical . #f)
 		       (canonical-mask . 0)
-		       (stable-name . #t)))
+		       (stable-name . #t)
+		       (display-name . #t)))
 	       (edges .
 		      ((from .
 			     #("country:gb"))))))
@@ -188,7 +229,8 @@
 			(meta  .
 			       ((canonical . #f)
 				(canonical-mask . 0)
-				(stable-name . #f)))
+				(stable-name . #f)
+				(display-name . #f)))
 			(edges .
 			       ((from .
 				      #("uk:gbn"))))))
@@ -198,7 +240,8 @@
 		     (meta  .
 			    ((canonical . #t)
 			     (canonical-mask . 1)
-			     (stable-name . #t)))
+			     (stable-name . #t)
+			     (display-name . #t)))
 		     (edges .
 			    ((from .
 				   #())))))
@@ -208,7 +251,8 @@
 		     (meta  .
 			    ((canonical . #t)
 			     (canonical-mask . 1)
-			     (stable-name . #t)))
+			     (stable-name . #t)
+			     (display-name . #t)))
 		     (edges .
 			    ((from .
 				   #())))))
@@ -218,7 +262,8 @@
 		     (meta  .
 			    ((canonical . #t)
 			     (canonical-mask . 1)
-			     (stable-name . #t)))
+			     (stable-name . #t)
+			     (display-name . #t)))
 		     (edges .
 			    ((from .
 				   #())))))
@@ -227,7 +272,8 @@
 		      (meta  .
 			     ((canonical . #f)
 			      (canonical-mask . 0)
-			      (stable-name . #f)))
+			      (stable-name . #f)
+			      (display-name . #t)))
 		      (edges .
 			     ((from .
 				    #("territory:sx"))))))
@@ -237,7 +283,8 @@
 			(meta  .
 			       ((canonical . #t)
 				(canonical-mask . 1)
-				(stable-name . #t)))
+				(stable-name . #t)
+				(display-name . #t)))
 			(edges .
 			       ((from .
 				      #())))))
@@ -247,17 +294,8 @@
 		      (meta  .
 			     ((canonical . #f)
 			      (canonical-mask . 0)
-			      (stable-name . #t)))
-		      (edges .
-			     ((from .
-				    #("country:gb"))))))
-  ("territory:bat" . ((names .
-			     ((en-GB . "British Antarctic Territory")
-			      (cy    . "Tiriogaeth Antarctig Prydain")))
-		      (meta  .
-			     ((canonical . #f)
-			      (canonical-mask . 0)
-			      (stable-name . #t)))
+			      (stable-name . #t)
+			      (display-name . #t)))
 		      (edges .
 			     ((from .
 				    #("country:gb"))))))
@@ -267,7 +305,8 @@
 		     (meta  .
 			    ((canonical . #f)
 			     (canonical-mask . 0)
-			     (stable-name . #t)))
+			     (stable-name . #t)
+			     (display-name . #t)))
 		     (edges .
 			    ((from .
 				   #("country:gb" "country:fr"))))))
@@ -277,7 +316,8 @@
 		   (meta  .
 			  ((canonical . #t)
 			   (canonical-mask . 1)
-			   (stable-name . #t)))
+			   (stable-name . #t)
+			   (display-name . #t)))
 		   (edges .
 			  ((from .
 				 #())))))
@@ -286,7 +326,8 @@
 		      (meta  .
 			     ((canonical . #f)
 			      (canonical-mask . 0)
-			      (stable-name . #f)))
+			      (stable-name . #f)
+			      (display-name . #t)))
 		      (edges .
 			     ((from .
 				    #("country:fr"))))))
@@ -295,7 +336,8 @@
 		   (meta  .
 			  ((canonical . #f)
 			   (canonical-mask . 0)
-			   (stable-name . #f)))
+			   (stable-name . #f)
+			   (display-name . #t)))
 		   (edges .
 			  ((from .
 				 #("country:fr"))))))

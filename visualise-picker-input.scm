@@ -29,7 +29,8 @@
     (meta  .
 	   ((canonical      . #f)
 	    (canonical-mask . 0)
-	    (stable-name    . #f)))
+	    (stable-name    . #f)
+	    (display-name   . #f)))
     (edges .
 	   ((from . #())))))
 
@@ -70,7 +71,10 @@
 	      (printf "\"~A\" [label=\"~A\\n~A\\n~A\",style=filled,fillcolor=~A];\n"
 		      id
 		      id (node-ref '(names en-GB) node) (node-ref '(names cy) node)
-		      (if (node-ref '(meta canonical) node) "mediumspringgreen" "white"))
+		      (cond
+		       ((node-ref '(meta canonical)    node) "mediumspringgreen")
+		       ((node-ref '(meta display-name) node) "grey")
+		       (else "white")))
 	      (for-each
 		(lambda (remote-id)
 		  (printf "\"~A\" -> \"~A\";\n" id remote-id))
