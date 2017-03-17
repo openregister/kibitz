@@ -108,7 +108,7 @@
 	The tools rely on a number of "eggs" from the CHICKEN ecosystem.
 	Install them thus:
 
-	    chicken-install medea csv-xml clojurian list-utils vector-lib utf8-srfi-13
+	    chicken-install medea csv-xml clojurian list-utils vector-lib utf8
 
 	The visualisation tools require Graphviz.
 
