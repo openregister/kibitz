@@ -378,7 +378,8 @@
     ("Welsh"                    ,string      (,welsh))
     ("Passport applicant typos" ,string-list (,(nyms display-name: #f)))
     ("Endonyms"                 ,string-list (,(nyms display-name: #t)))
-    ("Combined Synonyms"        ,string-list (,(nyms display-name: #t)))))
+    ("Combined Synonyms"        ,string-list (,(nyms display-name: #t)))
+    ("DWP Synonyms"             ,ignore      ())))
 
 
 

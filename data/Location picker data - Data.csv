@@ -1,4 +1,4 @@
-Andy's key,Type,Name,Official-name,Code,Excluded,Territory belongs to,Territory belongs to code,Welsh,Passport applicant typos,Endonyms,Combined Synonyms
+Andy's key,Type,Name,Official-name,Code,Excluded,Territory belongs to,Territory belongs to code,Welsh,Passport applicant typos,Endonyms,Combined Synonyms,DWP Synonyms
 country:AF,country,Afghanistan,The Islamic Republic of Afghanistan,AF,,,,Affganistan,"afganistan,
 afganastan,
 afganestan,
@@ -10,7 +10,7 @@ afghanlstan,
 afghistan,
 afghistan",",Afghanestan
 افغانستان","افغانستان,
-Islamic Republic of Afghanistan"
+Islamic Republic of Afghanistan",
 country:AL,country,Albania,The Republic of Albania,AL,,,,Albania,"alabnia,
 albana,
 albania,
@@ -18,7 +18,7 @@ albanian,
 albanija,
 albenia,
 albiana,
-alibania",Shqipëria,Republic of Albania
+alibania",Shqipëria,Republic of Albania,
 country:DZ,country,Algeria,The People's Democratic Republic of Algeria,DZ,,,,Algeria,"aigeria,
 alegeria,
 algeir,
@@ -31,23 +31,23 @@ algiers","Dzayer,
 ⴷⵣⴰⵢⴻⵔ,
 Al-Jazā'ir,
 الجزائر","الجزائر,
-People's Democratic Republic of Algeriaalgerie"
-country:AD,country,Andorra,The Principality of Andorra,AD,,,,Andorra,,,Principality of Andorra
-country:AO,country,Angola,The Republic of Angola,AO,,,,Angola,angolo,,Republic of Angola
-country:AG,country,Antigua and Barbuda,Antigua and Barbuda,AG,,,,Antigwa a Barbiwda,,,
+People's Democratic Republic of Algeriaalgerie",
+country:AD,country,Andorra,The Principality of Andorra,AD,,,,Andorra,,,Principality of Andorra,
+country:AO,country,Angola,The Republic of Angola,AO,,,,Angola,angolo,,Republic of Angola,
+country:AG,country,Antigua and Barbuda,Antigua and Barbuda,AG,,,,Antigwa a Barbiwda,,,,
 country:AR,country,Argentina,The Argentine Republic,AR,,,,Yr Ariannin,"Argenina,
 Argentinia,
 argentiha,
 argentina,
 argentine,
 argentna",,"Argentine Republic,
-Genus Argentina"
+Genus Argentina",
 country:AM,country,Armenia,The Republic of Armenia,AM,,,,Armenia,"arima,
 armenia,
 arminia","Hayastán,
 Հայաստան","Հայաստան,
 Republic of Armenia,
-Hayastan"
+Hayastan",
 country:AU,country,Australia,The Commonwealth of Australia,AU,,,,Awstralia,"autralia,
 ausralia,
 austalia,
@@ -59,11 +59,11 @@ austrilia,
 austrlia,
 autralia,
 avstralia,
-avstria",,Commonwealth of Australia
+avstria",,Commonwealth of Australia,
 country:AT,country,Austria,The Republic of Austria,AT,,,,Awstria,,Österreich,"Österreich,
 Osterreich,
 Oesterreich,
-Republic of Austria"
+Republic of Austria",
 country:AZ,country,Azerbaijan,The Republic of Azerbaijan,AZ,,,,Aserbaijan,"azebaijan,
 azeraijan,
 azerbaijan,
@@ -78,16 +78,16 @@ azerbeyjan,
 azerbpijan",Azərbaycan,"Republic of Azerbaijan,
 Azerbaijani Republic,
 Azerbajdzhan,
-Azerbajdzhan Republic"
+Azerbajdzhan Republic",
 country:BH,country,Bahrain,The Kingdom of Bahrain,BH,,,,Bahrain,,",Al-Baḥrayn
 البحرين"," البحرين,
 Kingdom of Bahrain,
-State of Bahrain"
+State of Bahrain",
 country:BD,country,Bangladesh,The People's Republic of Bangladesh,BD,,,,Bangladesh,,বাংলাদেশ,"বাংলাদেশ,
 People's Republic of Bangladesh,
 Bangla Desh,
-East Pakistan"
-country:BB,country,Barbados,Barbados,BB,,,,Barbados,,,
+East Pakistan",
+country:BB,country,Barbados,Barbados,BB,,,,Barbados,,,,
 country:BY,country,Belarus,The Republic of Belarus,BY,,,,Belarws,,"Bielaruś,
 Беларусь,
 Belarus,
@@ -95,67 +95,67 @@ Belarus,
 Republic of Belarusbelorussia,
 Byelarus,
 Byelorussia,
-White Russia"
+White Russia",
 country:BE,country,Belgium,The Kingdom of Belgium,BE,,,,Gwlad Belg,Belguim,"België,
 Belgique,
 Belgien","België,
 Belgie,
 Belgien,
 Belgique,
-Kingdom of Belgium"
-country:BZ,country,Belize,Belize,BZ,,,,Belize,,,British Honduras
+Kingdom of Belgium",
+country:BZ,country,Belize,Belize,BZ,,,,Belize,,,British Honduras,
 country:BJ,country,Benin,The Republic of Benin,BJ,,,,Benin,,,"Republic of Benin,
-Dahomey"
+Dahomey",
 country:BT,country,Bhutan,The Kingdom of Bhutan,BT,,,,Bhwtan,,"Druk Yul,
 འབྲུག་ཡུལ","भूटान,
-Kingdom of Bhutan"
+Kingdom of Bhutan",
 country:BO,country,Bolivia,The Plurinational State of Bolivia,BO,,,,Bolifia,,"Bolivia,
 Buliwya,
 Wuliwya,
-Volívia",Plurinational State of Bolivia
+Volívia",Plurinational State of Bolivia,
 country:BA,country,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,,,,Bosnia a Hercegovina,,"Bosna i Hercegovina,
 Босна и Херцеговина","BiH,
 Bosna i Hercegovina,
 Босна и Херцеговина,
 Bosna i Hercegovina,
 Bosnia-Herzegovina,
-Republic of Bosnia and Herzegovina"
-country:BW,country,Botswana,The Republic of Botswana,BW,,,,Botswana,,,Republic of Botswana
+Republic of Bosnia and Herzegovina",
+country:BW,country,Botswana,The Republic of Botswana,BW,,,,Botswana,,,Republic of Botswana,
 country:BR,country,Brazil,The Federative Republic of Brazil,BR,,,,Brasil,,Brasil,"Brasil,
-Federative Republic of Brazil"
-country:BN,country,Brunei,Brunei Darussalam,BN,,,,Brunei,,بروني,
+Federative Republic of Brazil",
+country:BN,country,Brunei,Brunei Darussalam,BN,,,,Brunei,,بروني,,
 country:BG,country,Bulgaria,The Republic of Bulgaria,BG,,,,Bwlgaria,"Bugaria,
 Bulagar","Bulgariya,
 Bălgarija,
 България","България,
-Republic of Bulgaria"
+Republic of Bulgaria",
 country:BF,country,Burkina Faso,Burkina Faso,BF,,,,Burkina Faso,,,"Burkina Fasoupper,
-Volta"
+Volta",
 country:MM,country,Burma,The Republic of the Union of Myanmar,MM,,,,Burma,,"Myanma,
 မြန်မာ","Republic of the Union of Myanmar,
-Union of burma"
-country:BI,country,Burundi,The Republic of Burundi,BI,,,,Bwrwndi,,,Republic of Burundi
+Union of burma",Myanmar
+country:BI,country,Burundi,The Republic of Burundi,BI,,,,Bwrwndi,,,Republic of Burundi,
 country:KH,country,Cambodia,The Kingdom of Cambodia,KH,,,,Cambodia,,"Kampuchea,
 កម្ពុជា","កម្ពុជា,
 Kingdom of Cambodia,
-Kampuchea"
+Kampuchea",
 country:CM,country,Cameroon,The Republic of Cameroon,CM,,,,Camerŵn,,"Cameroun,
 Cameroon","Republic of Cameroon,
-Cameroun"
+Cameroun",
 country:CA,country,Canada,Canada,CA,,,,Canada,"Canadaigua,
-Candada",,
+Candada",,,
 country:CV,country,Cape Verde,The Republic of Cabo Verde,CV,,,,Cabo Verde,,Cabo Verde,"Cabo,
-Republic of Cabo Verde"
+Republic of Cabo Verde",
 country:CF,country,Central African Republic,The Central African Republic,CF,,,,Gweriniaeth Canolbarth Affrica,,"République Centrafricaine,
 Ködörösêse tî Bêafrîka","Central African Republic,
 Central Africa,
-CAR"
+CAR",
 country:TD,country,Chad,The Republic of Chad,TD,,,,Tchad,,"Tchad,
 Tšād,
 تشاد","تشاد‎,
 Tchad,
-Republic of Chad"
-country:CL,country,Chile,The Republic of Chile,CL,,,,Chile,,,Republic of Chile
+Republic of Chad",
+country:CL,country,Chile,The Republic of Chile,CL,,,,Chile,,,Republic of Chile,
 country:CN,country,China,The People's Republic of China,CN,,,,Tsieina,,"Zhōngguó,
 中国","Zhongguo,
 Zhonghua,
@@ -165,122 +165,123 @@ Peoples Republic,
 People's Republic of China
 Cathay,
 Mainland china,
-PRC"
-country:CO,country,Colombia,The Republic of Colombia,CO,,,,Colombia,,,Republic of Colombia
+PRC","Zhonghua Peoples Republic,
+中国/中华"
+country:CO,country,Colombia,The Republic of Colombia,CO,,,,Colombia,,,Republic of Colombia,
 country:KM,country,Comoros,The Union of the Comoros,KM,,,,Y Comoros,,"Komori,
 Juzur al-Qamar,
 جزر القمر,
 Comores","جز القمر,
 Union of the Comoros,
-Federal Islamic Republic of the Comoros"
+Federal Islamic Republic of the Comoros",جزر القمر
 country:CG,country,Congo,The Republic of the Congo,CG,,,,Gweriniaeth y Congo,,République du Congo,"Republic of the Congo,
 French Congo,
-Brazzaville"
+Brazzaville",
 country:CD,country,Democratic Republic of Congo,The Democratic Republic of the Congo,CD,,,,Gweriniaeth Ddemocrataidd Congo,,République démocratique du Congo,"Congo-Brazzaville,
 Repubilika ya Kongo,
-Democratic Republic of the Congo"
+Democratic Republic of the Congo",
 country:CR,country,Costa Rica,The Republic of Costa Rica,CR,,,,Costa Rica,"Coasta Rica,
-Costa Rico",,Republic of Costa Rica
+Costa Rico",,Republic of Costa Rica,
 country:HR,country,Croatia,The Republic of Croatia,HR,,,,Croatia,,Hrvatska,"Hrvatska,
-Republic of Croatia"
-country:CU,country,Cuba,The Republic of Cuba,CU,,,,Ciwba,,,Republic of Cuba
+Republic of Croatia",
+country:CU,country,Cuba,The Republic of Cuba,CU,,,,Ciwba,,,Republic of Cuba,
 country:CY,country,Cyprus,The Republic of Cyprus,CY,,,,Cyprus,,"Kypros,
 Κύπρος,
 Kıbrıs","CY,
 Κύπρος,
 Kýpros,
 Kıbrıs,
-Republic of Cyprus"
+Republic of Cyprus",
 country:CZ,country,Czechia,The Czech Republic,CZ,,,,Y Weriniaeth Tsiec,Czechoslav,"Česká republika
 Česko","Česká,
 Ceska,
-Czech Republic"
-country:CS,country,Czechoslovakia,Czechoslovak Republic,CS,,,,Tsiecoslofacia,,,
+Czech Republic",
+country:CS,country,Czechoslovakia,Czechoslovak Republic,CS,,,,Tsiecoslofacia,,,,
 country:DK,country,Denmark,The Kingdom of Denmark,DK,,,,Denmarc,,Danmark,"Danmark,
-Kingdom of Denmark"
+Kingdom of Denmark",
 country:DJ,country,Djibouti,The Republic of Djibouti,DJ,,,,Djibouti,,"Jībūtī,
 جيبوتي,
 Djibouti","جيبوتي‎,
 Jabuuti,
 Gabuuti,
-Republic of Djibouti"
+Republic of Djibouti",
 country:DM,country,Dominica,The Commonwealth of Dominica,DM,,,,Dominica,,,"Dominique,
-Commonwealth of Dominica"
-country:DO,country,Dominican Republic,The Dominican Republic,DO,,,,Gweriniaeth Dominica,,República Dominicana,Dominican Republic
-country:DD,country,East Germany,Germany Democratic Republic,DD,,,,Dwyrain yr Almaen,,,
+Commonwealth of Dominica",
+country:DO,country,Dominican Republic,The Dominican Republic,DO,,,,Gweriniaeth Dominica,,República Dominicana,Dominican Republic,
+country:DD,country,East Germany,Germany Democratic Republic,DD,,,,Dwyrain yr Almaen,,,,
 country:TL,country,East Timor,The Democratic Republic of Timor-Leste,TL,,,,Dwyrain Timor,,"Timor Lorosa'e,
-Timor-Leste",Democratic Republic of Timor-Lestetimor
-country:EC,country,Ecuador,The Republic of Ecuador,EC,,,,Ecwador,,,Republic of Ecuador
+Timor-Leste",Democratic Republic of Timor-Lestetimor,Timor-Leste
+country:EC,country,Ecuador,The Republic of Ecuador,EC,,,,Ecwador,,,Republic of Ecuador,
 country:EG,country,Egypt,The Arab Republic of Egypt,EG,,,,Yr Aifft,"Egpyt,
 Egyot,
 Egyt,
 Rgypt","Misr,
 Masr,
 مصر","Arab Republic of Egypt,
-United Arab Republic"
+United Arab Republic",
 country:SV,country,El Salvador,The Republic of El Salvador,SV,,,,El Salvador,,,"Republic of El Salvador,
-Salvador"
+Salvador",
 country:GQ,country,Equatorial Guinea,The Republic of Equatorial Guinea,GQ,,,,Gini Gyhydeddol,,Guinea Ecuatorial,"Republic of Equatorial Guinea,
-Spanish Guinea"
+Spanish Guinea",
 country:ER,country,Eritrea,The State of Eritrea,ER,,,,Eritrea,,"Iritriya,
 إرتريا,
 Ertra,
 ኤርትራ","إرتريا,ኤርትራ,
-State of Eritrea"
+State of Eritrea",
 country:EE,country,Estonia,The Republic of Estonia,EE,,,,Estonia,,Eesti,"Eesti,
 Republic of Estonia,
-Esthonia"
+Esthonia",
 country:ET,country,Ethiopia,The Federal Democratic Republic of Ethiopia,ET,,,,Ethiopia,Ethopi,"Ityop'ia,
 ኢትዮጵያ","ኢትዮጵያ,
 Federal Democratic Republic of Ethiopia,
 Abyssinia,
-Yaltopya"
+Yaltopya",
 country:FJ,country,Fiji,The Republic of Fiji,FJ,,,,Ffiji,,"Fiji,
 Viti,
 फ़िजी","Viti,
 फ़िजी,
-Republic of Fiji"
+Republic of Fiji",
 country:FI,country,Finland,The Republic of Finland,FI,,,,Y Ffindir,,Suomi,"Suomi,
 Republic of Finland,
 Aaland,
-Åland"
+Åland",
 country:FR,country,France,The French Republic,FR,,,,Ffrainc,,,"République Française,
-French Republic"
+French Republic",République française
 country:GA,country,Gabon,The Gabonese Republic,GA,,,,Gabon,,République gabonaise,"République Gabonaise,
 Gabonese Republic,
-Gabun"
+Gabun",
 country:GE,country,Georgia,Georgia,GE,,,,Georgia,,"Sak'art'velo,
 საქართველო","საქართველო,
-Sakartvelo"
+Sakartvelo",
 country:DE,country,Germany,The Federal Republic of Germany,DE,,,,Yr Almaen,,Deutschland,"Bundesrepublik,
 Deutschland,
 Federal Republic of Germany,
-FRG"
+FRG",
 country:GH,country,Ghana,The Republic of Ghana,GH,,,,Ghana,,,"Republic of Ghana,
-Gold Coast"
+Gold Coast",
 country:GR,country,Greece,The Hellenic Republic,GR,,,,Gwlad Groeg,,"Hellas,
 Ελλάς,
 Ellada,
 Ελλάδα","Ελλάδα,
 Hellenic Republic,
-Ellas"
-country:GD,country,Grenada,Grenada,GD,,,,Grenada,,,
-country:GT,country,Guatemala,The Republic of Guatemala,GT,,,,Guatemala,,,Republic of Guatemala
+Ellas",
+country:GD,country,Grenada,Grenada,GD,,,,Grenada,,,,
+country:GT,country,Guatemala,The Republic of Guatemala,GT,,,,Guatemala,,,Republic of Guatemala,
 country:GN,country,Guinea,The Republic of Guinea,GN,,,,Gini,,"Guinée,
 Gine,
 Gine","Republic of Guinea,
-French Guinea"
+French Guinea",
 country:GW,country,Guinea-Bissau,The Republic of Guinea-Bissau,GW,,,,Guiné-Bissau,,,"Republic of Guinea-Bissau,
-Portuguese Guinea"
+Portuguese Guinea",
 country:GY,country,Guyana,The Co-operative Republic of Guyana,GY,,,,Gaiana,,,"Co-operative Republic of Guyana,
-British Guiana"
+British Guiana",
 country:HT,country,Haiti,The Republic of Haiti,HT,,,,Haiti,,"Haïti,
-Ayiti",Republic of Haiti
-country:HN,country,Honduras,The Republic of Honduras,HN,,,,Hondwras,,,Republic of Honduras
+Ayiti",Republic of Haiti,
+country:HN,country,Honduras,The Republic of Honduras,HN,,,,Hondwras,,,Republic of Honduras,
 country:HU,country,Hungary,Hungary,HU,,,,Hwngari,,Magyarország,"Magyarország,
-Magyarorszag"
+Magyarorszag",
 country:IS,country,Iceland,The Republic of Iceland,IS,,,,Gwlad yr Iâ,,Ísland,"Island,
-Republic of Iceland"
+Republic of Iceland",
 country:IN,country,India,The Republic of India,IN,,,,India,,"Bharôt,
 ভাৰত,
 Bharôt,
@@ -306,24 +307,24 @@ Bhāratadēsam,
 భారత దేశం","भारत गणराज्य,
 Hindustan,
 Republic of India,
-Bharat"
+Bharat",
 country:ID,country,Indonesia,The Republic of Indonesia,ID,,,,Indonesia,,,"Republic of Indonesia,
-Dutch East Indies"
+Dutch East Indies",
 country:IR,country,Iran,The Islamic Republic of Iran,IR,,,,Iran,,",Īrān
 ایران"," ایران,
 Islamic Republic of Iran,
-Persia"
+Persia",
 country:IQ,country,Iraq,The Republic of Iraq,IQ,,,,Irac,,"Al-'Iraq,
 العراق,
 Îraq"," العراق,‎
 Republic of Iraq,
 Al-Iraq,
-Irak"
+Irak",العراق‎
 country:IE,country,Ireland,Ireland,IE,,,,Iwerddon,Irelend,Éire,"Éire,
 Ireland,
 Eire,
 Irish Republic,
-Republic of Ireland"
+Republic of Ireland",
 country:IL,country,Israel,The State of Israel,IL,,,,Israel,Isreal,",Yisra'el
 ,ישראל
 ,Israʼiyl
@@ -331,21 +332,21 @@ country:IL,country,Israel,The State of Israel,IL,,,,Israel,Isreal,",Yisra'el
 State of Israel,
 Sion,
 Yisrael,
-Zion"
-country:IT,country,Italy,The Italian Republic,IT,,,,Yr Eidal,Itlay,Italia,"Italia,Italian Republic"
+Zion",إسرائيل ישראל
+country:IT,country,Italy,The Italian Republic,IT,,,,Yr Eidal,Itlay,Italia,"Italia,Italian Republic",
 country:CI,country,Ivory Coast,The Republic of Cote D'Ivoire,CI,,,,Côte d’Ivoire,,,"Cote D'Ivoire,
-Republic of Cote D'Ivoire"
+Republic of Cote D'Ivoire",Cote dIvoire
 country:JM,country,Jamaica,Jamaica,JM,,,,Jamaica,"Jamaca,
 Jamacia",,"Rastas,
-Rastafari"
+Rastafari",
 country:JP,country,Japan,Japan,JP,,,,Japan,,"Nihon,
 Nippon,
 日本","Nippon,
 Nihon,
-日本"
+日本",
 country:JO,country,Jordan,The Hashemite Kingdom of Jordan,JO,,,,Iorddonen,,",Al-’Urdun
 الأردن"," الأردن,
-Hashemite Kingdom of Jordan"
+Hashemite Kingdom of Jordan",
 country:KZ,country,Kazakhstan,The Republic of Kazakhstan,KZ,,,,Kazakstan,,"Qazaqstan,
 Қазақстан,
 قازاقستان,
@@ -354,17 +355,17 @@ Kazakhstán,
 Казахстан,
 Republic of Kazakhstankazak,
 Kazakh,
-Kazakstan"
-country:KE,country,Kenya,The Republic of Kenya,KE,,,,Kenya,,,Republic of Kenya
-country:KI,country,Kiribati,The Republic of Kiribati,KI,,,,Kiribati,,,Republic of Kiribati
+Kazakstan",
+country:KE,country,Kenya,The Republic of Kenya,KE,,,,Kenya,,,Republic of Kenya,
+country:KI,country,Kiribati,The Republic of Kiribati,KI,,,,Kiribati,,,Republic of Kiribati,
 country:XK,country,Kosovo,The Republic of Kosovo,XK,,,,Kosovo,,"Kosova,
-Косово",Republic of Kosovo
+Косово",Republic of Kosovo,
 country:KW,country,Kuwait,The State of Kuwait,KW,,,,Kuwait,,",Dawlat ul-Kuwayt
 ,دولة الكويت
 ,il-ikwet
 الكويت"," الكويت,
 State of Kuwait,
-Koweit"
+Koweit",
 country:KG,country,Kyrgyzstan,The Kyrgyz Republic,KG,,,,Kyrgyzstan,,"Kyrgyzstan,
 Кыргызстан,
 Kirgizija,
@@ -375,50 +376,50 @@ Kirghizstan,
 Kirgiz,
 Kirgizia,
 Kirgizstan,
-Kyrgyz Republic"
+Kyrgyz Republic",
 country:LA,country,Laos,The Lao People's Democratic Republic,LA,,,,Laos,,"Lao,
-ປະເທດລາວ",Lao People's Democratic Republic
+ປະເທດລາວ",Lao People's Democratic Republic,
 country:LV,country,Latvia,The Republic of Latvia,LV,,,,Latfia,,Latvija,"Latvija,
 Republic of Latvia,
-Latvijaz"
+Latvijaz",
 country:LB,country,Lebanon,The Lebanese Republic,LB,,,,Libanus,,",Lubnān
 لبنان"," لبنان
-,Lebanese Republic"
+,Lebanese Republic",
 country:LS,country,Lesotho,The Kingdom of Lesotho,LS,,,,Lesotho,,,"Kingdom of Lesotho,
-Basutoland"
-country:LR,country,Liberia,The Republic of Liberia,LR,,,,Liberia,,,Republic of Liberia
+Basutoland",
+country:LR,country,Liberia,The Republic of Liberia,LR,,,,Liberia,,,Republic of Liberia,
 country:LY,country,Libya,Libya,LY,,,,Libia,,"Libya,
 ⵍⵉⴱⵢⴰ,
 Lībiyā,
 ليبيا"," ليبيا,
 Socialist People's Libyan Arab,
-Jamahiriya"
-country:LI,country,Liechtenstein,The Principality of Liechtenstein,LI,,,,Liechtenstein,,,Principality of Liechtenstein
-country:LT,country,Lithuania,The Republic of Lithuania,LT,,,,Lithwania,,Lietuva,"Lietuva,Republic of Lithuanialietuva"
+Jamahiriya",
+country:LI,country,Liechtenstein,The Principality of Liechtenstein,LI,,,,Liechtenstein,,,Principality of Liechtenstein,
+country:LT,country,Lithuania,The Republic of Lithuania,LT,,,,Lithwania,,Lietuva,"Lietuva,Republic of Lithuanialietuva",
 country:LU,country,Luxembourg,The Grand Duchy of Luxembourg,LU,,,,Lwcsembwrg,Luxemborg,"Lëtzebuerg,
 Luxemburg","Grand Duchy of Luxembourg,
-Luxemburg"
+Luxemburg",
 country:MK,country,Macedonia,The Republic of Macedonia,MK,,,,Gweriniaeth Macedonia,,"Makedonija,
 Македонија","Македонија,
 Republic of Macedonia,
 Macedon,
-Makedonija"
+Makedonija",
 country:MG,country,Madagascar,The Republic of Madagascar,MG,,,,Madagasgar,,"Madagasikara,
 Madagascar","Madagasikara,
 Republic of Madagascar,
-Malagasy Republic"
+Malagasy Republic",
 country:MW,country,Malawi,The Republic of Malawi,MW,,,,Malawi,,,"Republic of Malawi,
-Nyasaland"
+Nyasaland",
 country:MY,country,Malaysia,Malaysia,MY,,,,Malaysia,Malyasi,"Malaysia,
 Mǎláixīyà,
 马来西亚,
 Malēṣiyā,
-மலேசியா",Federation of Malaysia
-country:MV,country,Maldives,The Republic of Maldives,MV,,,,Maldives,,Dhivehi Raajje,Republic of Maldives
+மலேசியா",Federation of Malaysia,
+country:MV,country,Maldives,The Republic of Maldives,MV,,,,Maldives,,Dhivehi Raajje,Republic of Maldives,
 country:ML,country,Mali,The Republic of Mali,ML,,,,Mali,,,"Republic of Mali,
-French Sudan"
-country:MT,country,Malta,The Republic of Malta,MT,,,,Malta,,,Republic of Malta
-country:MH,country,Marshall Islands,The Republic of the Marshall Islands,MH,,,,Ynysoedd Marshall,,Aorōkin M̧ajeļ,Republic of the Marshall Islands
+French Sudan",
+country:MT,country,Malta,The Republic of Malta,MT,,,,Malta,,,Republic of Malta,
+country:MH,country,Marshall Islands,The Republic of the Marshall Islands,MH,,,,Ynysoedd Marshall,,Aorōkin M̧ajeļ,Republic of the Marshall Islands,
 country:MR,country,Mauritania,The Islamic Republic of Mauritania,MR,,,,Mauritania,,"Muritan,
 Agawec
 ⵎⵓⵔⵉⵜⴰⵏ,
@@ -427,25 +428,25 @@ Mūrītānyā
 موريتانيا"," الموريتانية,
 Islamic Republic of Mauritania,
 Mauritanie,
-Muritaniya"
+Muritaniya",
 country:MU,country,Mauritius,The Republic of Mauritius,MU,,,,Mauritius,,"Mauritius,
 Maurice,
-Moris",Republic of Mauritius
+Moris",Republic of Mauritius,
 country:MX,country,Mexico,The United Mexican States,MX,,,,Mecsico,"Mexcio,
 Mexixo","México,
 Mēxihco","Mexicanos,
-United Mexican States"
-country:FM,country,Micronesia,The Federated States of Micronesia,FM,,,,Micronesia,,,Federated States of Micronesia
+United Mexican States",
+country:FM,country,Micronesia,The Federated States of Micronesia,FM,,,,Micronesia,,,Federated States of Micronesia,
 country:MD,country,Moldova,The Republic of Moldova,MD,,,,Moldofa,,,"Republic of Moldova,
-Moldavia"
-country:MC,country,Monaco,The Principality of Monaco,MC,,,,Monaco,,,Principality of Monaco
+Moldavia",
+country:MC,country,Monaco,The Principality of Monaco,MC,,,,Monaco,,,Principality of Monaco,
 country:MN,country,Mongolia,Mongolia,MN,,,,Mongolia,,"Mongol Uls,
 Монгол Улс,
 ᠮᠤᠩᠭᠤᠯ ᠤᠯᠤᠰ","Mongγol Ulus,
 Монгол улс,
-Outer Mongolia"
+Outer Mongolia",Mongγol ulus
 country:ME,country,Montenegro,Montenegro,ME,,,,Montenegro,,"Crna Gora,
-Црна Гора",Crna Gora
+Црна Гора",Crna Gora,
 country:MA,country,Morocco,The Kingdom of Morocco,MA,,,,Moroco,,"Amerruk,
 Elmeɣrib,
 ⴰⵎⵔⵔⵓⴽ,
@@ -455,104 +456,104 @@ Al-maɣréb,
 Kingdom of Moroccoal-Magrib,
 Maroc,
 Marruecos,
-Western Sahara"
+Western Sahara",
 country:MZ,country,Mozambique,The Republic of Mozambique,MZ,,,,Mosambic,,Moçambique,"Moçambique,
 Republic of Mozambique,
-Mocambique"
+Mocambique",
 country:NA,country,Namibia,The Republic of Namibia,NA,,,,Namibia,,,"Namibië,
 Republic of Namibia,
-South west africa"
+South west africa",
 country:NR,country,Nauru,The Republic of Nauru,NR,,,,Nauru,,Naoero,"Naoero,
-Republic of Nauru"
+Republic of Nauru",
 country:NP,country,Nepal,The Federal Democratic Republic of Nepal,NP,,,,Nepal,,"Nepāl,
 नेपाल","नेपाल,
-Federal Democratic Republic of Nepal"
+Federal Democratic Republic of Nepal",
 country:NL,country,Netherlands,The Kingdom of the Netherlands,NL,,,,Yr Iseldiroedd,,"Nederland,
 Nederlân","Holland,
 Nederland,
 Kingdom of the Netherlands,
 Holland,
-Nederland"
+Nederland",
 country:NZ,country,New Zealand,New Zealand,NZ,,,,Seland Newydd,"Zealnd,
-Zeland",Aotearoa,Aotearoa
-country:NI,country,Nicaragua,The Republic of Nicaragua,NI,,,,Nicaragwa,,,Republic of Nicaragua
-country:NE,country,Niger,The Republic of Niger,NE,,,,Niger,,,"Nijar,Republic of Niger"
+Zeland",Aotearoa,Aotearoa,
+country:NI,country,Nicaragua,The Republic of Nicaragua,NI,,,,Nicaragwa,,,Republic of Nicaragua,
+country:NE,country,Niger,The Republic of Niger,NE,,,,Niger,,,"Nijar,Republic of Niger",
 country:NG,country,Nigeria,The Federal Republic of Nigeria,NG,,,,Nigeria,,,"Nijeriya,
 Naíjíríà,
-Federal Republic of Nigeria"
+Federal Republic of Nigeria",
 country:KP,country,North Korea,The Democratic People's Republic of Korea,KP,,,,Gogledd Corea,,"조선 / 朝鮮,
 Bukchosŏn,
 북조선","North Korea,
 Democratic People's Republic of Koread,
 PRK,
-DPRK"
+DPRK",
 country:NO,country,Norway,The Kingdom of Norway,NO,,,,Norwy,,"Norge,
 Noreg","Norge,
 Noreg,
-Kingdom of Norway"
+Kingdom of Norway",
 country:OM,country,Oman,The Sultanate of Oman,OM,,,,Oman,,",‘Umān
 عُمان"," عمان,Sultanate of Oman,
 Muscat and Oman,
-Sultanate of Oman"
+Sultanate of Oman",
 country:PK,country,Pakistan,The Islamic Republic of Pakistan,PK,,,,Pakistan,,"
 پاکستان"," پاکستان,
 Islamic Republic of Pakistan,
-West Pakistan"
+West Pakistan",
 country:PW,country,Palau,The Republic of Palau,PW,,,,Palau,,Belau,"Republic of Palau,
 Belau,
-Pelew"
-country:PA,country,Panama,The Republic of Panama,PA,,,,Panama,,Panamá,Republic of Panama
+Pelew",
+country:PA,country,Panama,The Republic of Panama,PA,,,,Panama,,Panamá,Republic of Panama,
 country:PG,country,Papua New Guinea,The Independent State of Papua New Guinea,PG,,,,Papua Guinea Newydd,,Papua Niugini,"Independent State of Papua New Guinea,
-PNG"
-country:PY,country,Paraguay,The Republic of Paraguay,PY,,,,Paragwâi,,Paraguái,Republic of Paraguay
+PNG",
+country:PY,country,Paraguay,The Republic of Paraguay,PY,,,,Paragwâi,,Paraguái,Republic of Paraguay,
 country:PE,country,Peru,The Republic of Peru,PE,,,,Periw,,"Perú,
-Piruw",Republic of Peru
+Piruw",Republic of Peru,
 country:PH,country,Philippines,The Republic of the Philippines,PH,,,,Pilipinas,Phillippine,"Pilipinas,
 Pinas","Pilipinas,
 Republic of the Philippines,
-Philippine Islands"
+Philippine Islands",
 country:PL,country,Poland,The Republic of Poland,PL,,,,Gwlad Pwyl,,Polska,"Polska,
-Republic of Poland"
+Republic of Poland",
 country:PT,country,Portugal,The Portuguese Republic,PT,,,,Portiwgal,,,"Portuguesa,
-Portuguese Republic"
+Portuguese Republic",
 country:QA,country,Qatar,The State of Qatar,QA,,,,Qatar,,"
 قطر"," قطر,
 State of Qatar,
 Katar,
-Ztate of Katar"
+Ztate of Katar",
 country:RO,country,Romania,Romania,RO,,,,Rwmania,,Romania,"Rumania,
 Roumania,
 România,
 Roumania,
-Rumania"
+Rumania",
 country:RU,country,Russia,The Russian Federation,RU,,,,Rwsia,,"Rossiya,
 Rossiâ,
 Россия1","Rossiya,
 Российская,
 Россия,
-Russian Federation"
+Russian Federation",
 country:RW,country,Rwanda,The Republic of Rwanda,RW,,,,Rwanda,,,"Republic of Rwandaruanda,
-Rwandese Republic"
+Rwandese Republic",
 country:WS,country,Samoa,The Independent State of Samoa,WS,,,,Samoa,Samo,Amerika Sāmoa,"Independent State of Samoa,
 Samoa i Sisifo,
-Western samoa"
+Western samoa",
 country:SM,country,San Marino,The Republic of San Marino,SM,,,,San Marino,,,"RSM,
-Republic of San Marino"
+Republic of San Marino",Repubblica
 country:ST,country,Sao Tome and Principe,The Democratic Republic of Sao Tome and Principe,ST,,,,São Tomé a Príncipe,,São Tomé e Príncipe,"Democratic Republic of Sao Tome and Principe,
 Sao Thome e Principe,
 Sao Tome e Principe,
-St. Thomas and Principe"
+St. Thomas and Principe",
 country:SA,country,Saudi Arabia,The Kingdom of Saudi Arabia,SA,,,,Saudi Arabia,,",Al-Mamlaka Al-‘Arabiyyah as Sa‘ūdiyyah
 المملكة العربية السعودية"," السعودية,
-Kingdom of Saudi Arabia"
+Kingdom of Saudi Arabia",
 country:SN,country,Senegal,The Republic of Senegal,SN,,,,Sénégal,,Sénégal,"Sénégal,
-Republic of Senegal"
+Republic of Senegal",
 country:RS,country,Serbia,The Republic of Serbia,RS,,,,Serbia,,"Srbija,
 Србија","Србија,
 Srbija,
-Republic of Serbia"
-country:SC,country,Seychelles,The Republic of Seychelles,SC,,,,Seychelles,,Sesel,Republic of Seychelles
-country:SL,country,Sierra Leone,The Republic of Sierra Leone,SL,,,,Sierra Leone,,,Republic of Sierra Leone
+Republic of Serbia",Србија Srbija
+country:SC,country,Seychelles,The Republic of Seychelles,SC,,,,Seychelles,,Sesel,Republic of Seychelles,
+country:SL,country,Sierra Leone,The Republic of Sierra Leone,SL,,,,Sierra Leone,,,Republic of Sierra Leone,
 country:SG,country,Singapore,The Republic of Singapore,SG,,,,Singapore,,"Singapura,
 Xīnjiāpō,
 新加坡,
@@ -560,20 +561,20 @@ Singapur,
 சிங்கப்பூர்","Singapura,
 சிங்கப்பூர்கு,டியரசு,
 新加坡共和国,
-Republic of Singapore"
+Republic of Singapore",சிங்கப்பூர் குடியரசு
 country:SK,country,Slovakia,The Slovak Republic,SK,,,,Slofacia,,Slovensko,"Slovenská,
 Slovensko,
-Slovak Republic"
+Slovak Republic",
 country:SI,country,Slovenia,The Republic of Slovenia,SI,,,,Slofenia,,Slovenija,"Slovenija,
 Republic of Slovenia,
-Slovenija"
-country:SB,country,Solomon Islands,Solomon Islands,SB,,,,Ynysoedd Solomon,,Solomon Aelan,Solomons
+Slovenija",
+country:SB,country,Solomon Islands,Solomon Islands,SB,,,,Ynysoedd Solomon,,Solomon Aelan,Solomons,
 country:SO,country,Somalia,Federal Republic of Somalia,SO,,,,Somalia,,"Soomaaliya,
 aş-Şūmāl,
 الصومال"," الصومال,
 Federal Republic of Somaliaaiai,
 Al-itihaad al-islamiya,
-Al itihaad al islamiya"
+Al itihaad al islamiya",
 country:ZA,country,South Africa,The Republic of South Africa,ZA,,,,De Affrica,,"Suid-Afrika,
 iNingizimu Afrika,
 uMzantsi Afrika,
@@ -585,45 +586,45 @@ Afrika Dzonga,
 iNingizimu Afrika,
 iSewula Afrika","RSA,
 Suid-Afrika,
-Republic of South Africa"
+Republic of South Africa",
 country:KR,country,South Korea,The Republic of Korea,KR,,,,De Corea,,"Hanguk,
 한국 / 韓國,
 Namhan,
 남한","South Korea,
-Republic of Korea"
+Republic of Korea",
 country:SS,country,South Sudan,The Republic of South Sudan,SS,,,,De Sudan,,,"Republic of South Sudan,
- السودان"
+ السودان",
 country:ES,country,Spain,The Kingdom of Spain,ES,,,,Sbaen,,"España,
 Espanya,
 Espainia,
 Espanha","España,
-Kingdom of Spain"
+Kingdom of Spain",
 country:LK,country,Sri Lanka,The Democratic Socialist Republic of Sri Lanka,LK,,,,Sri Lanka,,"Sri Lankā,
 ශ්‍රී ලංකාව,
 இலங்கை","LK,ශ්‍රී ලංකා,
 இலங்கை,
 Ceylon,
-Democratic Socialist Republic of Sri Lanka"
-country:KN,country,St Kitts and Nevis,The Federation of Saint Christopher and Nevis,KN,,,,Saint Kitts a Nevis,,,Federation of Saint Christopher and Nevis
-country:LC,country,St Lucia,Saint Lucia,LC,,,,Saint Lucia,,,
-country:VC,country,St Vincent,Saint Vincent and the Grenadines,VC,,,,Saint Vincent a’r Grenadines,,,
+Democratic Socialist Republic of Sri Lanka",ශ්‍රී ලංකා இலங்கை
+country:KN,country,St Kitts and Nevis,The Federation of Saint Christopher and Nevis,KN,,,,Saint Kitts a Nevis,,,Federation of Saint Christopher and Nevis,St. Kitts and Nevis
+country:LC,country,St Lucia,Saint Lucia,LC,,,,Saint Lucia,,,,St. Lucia
+country:VC,country,St Vincent,Saint Vincent and the Grenadines,VC,,,,Saint Vincent a’r Grenadines,,,,St. Vincent
 country:SD,country,Sudan,The Republic of the Sudan,SD,,,,Sudan,,",As-Sudan
 السودان"," السودان,
 Republic of the Sudan,
-Soudan"
+Soudan",
 country:SR,country,Suriname,The Republic of Suriname,SR,,,,Swrinam,,,"शर्नम्,
 Sarnam,
 Sranangron,
-Republic of Suriname"
+Republic of Suriname",Sarnam Sranangron
 country:SZ,country,Swaziland,The Kingdom of Swaziland,SZ,,,,Gwlad Swazi,,"Umbuso weSwatini,
 kaNgwane,
 Eswatini","weSwatini,
 Swatini,
 Ngwane,
 Kingdom of Swaziland,
-Kingdom of Eswatini"
+Kingdom of Eswatini",weSwatini Swatini Ngwane
 country:SE,country,Sweden,The Kingdom of Sweden,SE,,,,Sweden,,Sverige,"Sverige,
-Kingdom of Sweden"
+Kingdom of Sweden",
 country:CH,country,Switzerland,The Swiss Confederation,CH,,,,Y Swistir,Switerland,"Schweiz,
 Suisse,
 Svizzera,
@@ -631,19 +632,19 @@ Svizra","Swiss Confederation,
 Schweiz,
 Suisse,
 Svizzera,
-Svizra"
+Svizra",
 country:SY,country,Syria,The Syrian Arab Republic,SY,,,,Syria,,",Suriyah
 سورية"," سورية,
 Syria,
-Syrian Arab Republic"
+Syrian Arab Republic",
 country:TJ,country,Tajikistan,The Republic of Tajikistan,TJ,,,,Tajikistan,,"Tojikistan,
 Тоҷикистон","Тоҷикистон,
 Toçikiston,
 Republic of Tajikistantadjik,
 Tadzhik,
 Tadzhikistan,
-Tajik"
-country:TZ,country,Tanzania,The United Republic of Tanzania,TZ,,,,Tanzania,,,United Republic of Tanzania
+Tajik",
+country:TZ,country,Tanzania,The United Republic of Tanzania,TZ,,,,Tanzania,,,United Republic of Tanzania,
 country:TH,country,Thailand,The Kingdom of Thailand,TH,,,,Gwlad Thai,,"Mueang Thai,
 Prathet Thai,
 Ratcha-anachak Thai,
@@ -651,39 +652,39 @@ Ratcha-anachak Thai,
 ราชอาณาจักรไทย","TH,ประเทศไทย,
 Prathet Thai,
 Kingdom of Thailand,
-Siam"
-country:BS,country,The Bahamas,The Commonwealth of The Bahamas,BS,,,,Y Bahamas,,,Commonwealth of Bahamas
-country:GM,country,The Gambia,The Islamic Republic of The Gambia,GM,,,,Gambia,,,Islamic Republic of Gambia
+Siam",
+country:BS,country,The Bahamas,The Commonwealth of The Bahamas,BS,,,,Y Bahamas,,,Commonwealth of Bahamas,
+country:GM,country,The Gambia,The Islamic Republic of The Gambia,GM,,,,Gambia,,,Islamic Republic of Gambia,
 country:TG,country,Togo,The Togolese Republic,TG,,,,Togo,,,"Togolese,
-Togolese Republic"
+Togolese Republic",
 country:TO,country,Tonga,The Kingdom of Tonga,TO,,,,Tonga,,,"Kingdom of Tonga,
-Friendly islands"
+Friendly islands",
 country:TT,country,Trinidad and Tobago,The Republic of Trinidad and Tobago,TT,,,,Trinidad a Thobago,,,"Republic of Trinidad and Tobago,
-TT"
+TT",
 country:TN,country,Tunisia,The Tunisian Republic,TN,,,,Tunisia,,"Tunes,
 ⵜⵓⵏⵙ,
 Tūns,
 تونس"," تونس
-,Tunisian Republic"
+,Tunisian Republic",
 country:TR,country,Turkey,The Republic of Turkey,TR,,,,Twrci,,Türkiye,"Türkiye,
 Turkiye,
-Republic of Turkey"
+Republic of Turkey",
 country:TM,country,Turkmenistan,Turkmenistan,TM,,,,Turkmenistan,,Türkmenistan,"TM,
 Türkmenistan,
 Turkmen,
 Turkmenia,
-Turkomen"
-country:TV,country,Tuvalu,Tuvalu,TV,,,,Twfalw,,Jèrri,Ellice Islands
-country:UG,country,Uganda,The Republic of Uganda,UG,,,,Uganda,,,Republic of Uganda
+Turkomen",
+country:TV,country,Tuvalu,Tuvalu,TV,,,,Twfalw,,Jèrri,Ellice Islands,
+country:UG,country,Uganda,The Republic of Uganda,UG,,,,Uganda,,,Republic of Uganda,
 country:UA,country,Ukraine,Ukraine,UA,,,,Wcráin,,"Ukraїna,
 Україна","Ukrayina,
 Україна,
-Ukrayina"
+Ukrayina",
 country:AE,country,United Arab Emirates,The United Arab Emirates,AE,,,,Yr Emiradau Arabaidd Unedig,"arab emir ates,
 arab emirates",",Al-’Imārat Al-‘Arabiyyah Al-Muttaḥidah
 الإمارات العربيّة المتّحدة"," الإمارات,
 UAE,
-United Arab Emirates"
+United Arab Emirates",
 country:GB,country,United Kingdom,The United Kingdom of Great Britain and Northern Ireland,GB,,,,Y Deyrnas Unedig,"Bitain,
 Briain,
 Britiain,
@@ -705,7 +706,7 @@ Scotland,
 Northern Ireland,
 United Kingdom of Great Britain and Northern Ireland,
 Britain,
-U.K."
+U.K.",
 country:US,country,United States,The United States of America,US,,,,Unol Daleithiau America,"Ameeri,
 Ameica,
 Amerca,
@@ -730,146 +731,146 @@ The States,
 U.S.,
 U.S.A.,
 US,
-USA"
-country:UY,country,Uruguay,The Oriental Republic of Uruguay,UY,,,,Wrwgwái,,República Oriental del Uruguay,Oriental Republic of Uruguay
-country:SU,country,USSR,Union of Soviet Socialist Republics,SU,,,,Undeb y Gweriniaethau Sofiet Sosialaidd,,Союз Советских Социалистических Республик,
+USA",
+country:UY,country,Uruguay,The Oriental Republic of Uruguay,UY,,,,Wrwgwái,,República Oriental del Uruguay,Oriental Republic of Uruguay,
+country:SU,country,USSR,Union of Soviet Socialist Republics,SU,,,,Undeb y Gweriniaethau Sofiet Sosialaidd,,Союз Советских Социалистических Республик,,
 country:UZ,country,Uzbekistan,The Republic of Uzbekistan,UZ,,,,Uzbekistan,,"O‘zbekiston,
 Ўзбекистон","Ўзбекистон,
 O'zbekstan,
 O‘zbekiston,
 Republic of Uzbekistan,
-Uzbek"
+Uzbek",O’zbekstan
 country:VU,country,Vanuatu,The Republic of Vanuatu,VU,,,,Vanuatu,,,"Republic of Vanuatu,
-New Hebrides"
+New Hebrides",
 country:VA,country,Vatican City,Vatican City State,VA,,,,Gweriniaeth Dinas y Fatican,,E Civitate Vaticana,"Holy See,
-Citta del Vaticano"
-country:VE,country,Venezuela,The Bolivarian Republic of Venezuela,VE,,,,Feneswela,Venezula,Venezuela,Bolivarian Republic of Venezuela
+Citta del Vaticano",
+country:VE,country,Venezuela,The Bolivarian Republic of Venezuela,VE,,,,Feneswela,Venezula,Venezuela,Bolivarian Republic of Venezuela,
 country:VN,country,Vietnam,The Socialist Republic of Vietnam,VN,,,,Fietnam,"Veitnam,
 Vietman",Việt Nam,"Việt Nam,
 Socialist Republic of Vietnam,
-Annam"
+Annam",
 country:YE,country,Yemen,The Republic of Yemen,YE,,,,Yemen,,",Al-Yaman
 اليمن","اليمن,
-Republic of Yemen"
-country:YU,country,Yugoslavia,Socialist Federal Republic of Yugoslavia,YU,,,,Iwgoslafia,Yugosav,,Jugoslavija
+Republic of Yemen",
+country:YU,country,Yugoslavia,Socialist Federal Republic of Yugoslavia,YU,,,,Iwgoslafia,Yugosav,,Jugoslavija,
 country:ZM,country,Zambia,The Republic of Zambia,ZM,,,,Zambia,,,"Republic of Zambia,
-Northern Rhodesia"
+Northern Rhodesia",
 country:ZW,country,Zimbabwe,The Republic of Zimbabwe,ZW,,,,Zimbabwe,,,"Republic of Zimbabwe,
-Rhodesia"
+Rhodesia",
 territory:AX,territory,Åland Islands,Åland Islands,AX,,Finland,,Ynysoedd Åland,,"Åland,
 Ahvenanmaa","Aaland,
-Aland"
-territory:AI,territory,Anguilla,Anguilla,AI,,United Kingdom,,Anguilla,,,
-territory:AQ,territory,Antarctica,Antarctica,AQ,,,"territory:BAT, at:1,at:2,at:3,at:4,at:5,at:6,at:7,at:7",Antarctica,,,
-territory:AW,territory,Aruba,Aruba,AW,,Netherlands,,Aruba,,,
-territory:GG,territory,Guernsey,Bailiwick of Guernsey,GG,,United Kingdom,,Beilïaeth Guernsey,,,Island of Guernsey
-territory:JE,territory,Jersey,Bailiwick of Jersey,JE,,United Kingdom,,Beilïaeth Jersey,,,Island of Jersey
-territory:BM,territory,Bermuda,Bermuda,BM,,United Kingdom,,bermuda,,,Bermudas
-territory:BQ-BO,territory,Bonaire,Bonaire,BQ-BO,,Netherlands,,Bonaire,,,
-territory:KY,territory,Cayman Islands,Cayman Islands,KY,,United Kingdom,,Ynysoedd y Cayman,,,
-territory:ES-CE,territory,Ceuta,Ceuta,ES-CE,,Spain,,Ceuta,,,
-territory:MF,territory,Saint-Martin,Collectivity of Saint Martin,MF,,France,,Collectivity Sant Martin,,Sint Maarten,
+Aland",
+territory:AI,territory,Anguilla,Anguilla,AI,,United Kingdom,,Anguilla,,,,
+territory:AQ,territory,Antarctica,Antarctica,AQ,,,"territory:BAT, at:1,at:2,at:3,at:4,at:5,at:6,at:7,at:7",Antarctica,,,,
+territory:AW,territory,Aruba,Aruba,AW,,Netherlands,,Aruba,,,,
+territory:GG,territory,Guernsey,Bailiwick of Guernsey,GG,,United Kingdom,,Beilïaeth Guernsey,,,Island of Guernsey,
+territory:JE,territory,Jersey,Bailiwick of Jersey,JE,,United Kingdom,,Beilïaeth Jersey,,,Island of Jersey,
+territory:BM,territory,Bermuda,Bermuda,BM,,United Kingdom,,bermuda,,,Bermudas,
+territory:BQ-BO,territory,Bonaire,Bonaire,BQ-BO,,Netherlands,,Bonaire,,,,
+territory:KY,territory,Cayman Islands,Cayman Islands,KY,,United Kingdom,,Ynysoedd y Cayman,,,,
+territory:ES-CE,territory,Ceuta,Ceuta,ES-CE,,Spain,,Ceuta,,,,
+territory:MF,territory,Saint-Martin,Collectivity of Saint Martin,MF,,France,,Collectivity Sant Martin,,Sint Maarten,,
 territory:PR,territory,Puerto Rico,Commonwealth of Puerto Rico,PR,,United States,,Gymanwlad Puerto Rico,"Porto Rico,
 Puarto Rico",,"Porto Rico,
-PR"
-territory:MP,territory,Northern Mariana Islands,Commonwealth of the Northern Mariana Islands,MP,,United States,,Gymanwlad Ynysoedd Gogledd Mariana,,,Northern Marianas
-territory:CK,territory,Cook Islands,Cook Islands,CK,,New Zealand,,Ynysoedd Cook,,,Cook Islands
+PR",
+territory:MP,territory,Northern Mariana Islands,Commonwealth of the Northern Mariana Islands,MP,,United States,,Gymanwlad Ynysoedd Gogledd Mariana,,,Northern Marianas,
+territory:CK,territory,Cook Islands,Cook Islands,CK,,New Zealand,,Ynysoedd Cook,,,Cook Islands,
 territory:CW,territory,Curaçao,Country of Curaçao,CW,,Netherlands,,Gwlad Curaçao,,"Curaçao,
 Kòrsou,
-Curaçao",Curacao
-territory:AE-AZ,territory,Abu Dhabi,Emirate of Abu Dhabi,AE-AZ,,United Arab Emirates,,Emirate o Abu Dhabi,,,
-territory:AE-AJ,territory,Ajman,Emirate of Ajman,AE-AJ,,United Arab Emirates,,Emirate o Ajman,,,
-territory:AE-DU,territory,Dubai,Emirate of Dubai,AE-DU,,United Arab Emirates,,Emirate o Dubai,,,
-territory:AE-FU,territory,Fujairah,Emirate of Fujairah,AE-FU,,United Arab Emirates,,Emirate o Fujairah,,,
-territory:AE-RK,territory,Ras al-Khaimah,Emirate of Ras al-Khaimah,AE-RK,,United Arab Emirates,,Emirate o Ras al-Khaimah,,,
-territory:AE-SH,territory,Sharjah,Emirate of Sharjah,AE-SH,,United Arab Emirates,,Emirate o Sharjah,,,
-territory:AE-UQ,territory,Umm al-Quwain,Emirate of Umm al-Quwain,AE-UQ,,United Arab Emirates,,Emirate o Umm al-Quwain,,,
-territory:FK,territory,Falkland Islands,Falkland Islands,FK,,United Kingdom,,Ynysoedd y Falklands,,,Las Malvinas
+Curaçao",Curacao,
+territory:AE-AZ,territory,Abu Dhabi,Emirate of Abu Dhabi,AE-AZ,,United Arab Emirates,,Emirate o Abu Dhabi,,,,
+territory:AE-AJ,territory,Ajman,Emirate of Ajman,AE-AJ,,United Arab Emirates,,Emirate o Ajman,,,,
+territory:AE-DU,territory,Dubai,Emirate of Dubai,AE-DU,,United Arab Emirates,,Emirate o Dubai,,,,
+territory:AE-FU,territory,Fujairah,Emirate of Fujairah,AE-FU,,United Arab Emirates,,Emirate o Fujairah,,,,
+territory:AE-RK,territory,Ras al-Khaimah,Emirate of Ras al-Khaimah,AE-RK,,United Arab Emirates,,Emirate o Ras al-Khaimah,,,,
+territory:AE-SH,territory,Sharjah,Emirate of Sharjah,AE-SH,,United Arab Emirates,,Emirate o Sharjah,,,,
+territory:AE-UQ,territory,Umm al-Quwain,Emirate of Umm al-Quwain,AE-UQ,,United Arab Emirates,,Emirate o Umm al-Quwain,,,,
+territory:FK,territory,Falkland Islands,Falkland Islands,FK,,United Kingdom,,Ynysoedd y Falklands,,,Las Malvinas,
 territory:FO,territory,Faroe Islands,Faroe Islands,FO,,Denmark,,Ynysoedd Faroe,,"Føroyar,
 Færøerne","Føroyar,
 Færøerne,
 Aeroes,
-Faroes"
-territory:GF,territory,French Guiana,French Guiana,GF,,France,,french Guiana,,Guyane,
+Faroes",
+territory:GF,territory,French Guiana,French Guiana,GF,,France,,french Guiana,,Guyane,,
 territory:PF,territory,French Polynesia,French Polynesia,PF,,France,,Polynesia Ffrengig,,Polynésie française,"Polynésie Française,
-French Oceania"
-territory:GI,territory,Gibraltar,Gibraltar,GI,,United Kingdom,,Gibraltar,,,
+French Oceania",
+territory:GI,territory,Gibraltar,Gibraltar,GI,,United Kingdom,,Gibraltar,,,,
 territory:GL,territory,Greenland,Greenland,GL,,Denmark,,Ynys Las,,"Kalaallit Nunaat,
 Grønland","Grønland,
 Gronland,
-Kalaallit Nunaat"
-territory:GP,territory,Guadeloupe,Guadeloupe,GP,,France,,Guadeloupe,,,
+Kalaallit Nunaat",
+territory:GP,territory,Guadeloupe,Guadeloupe,GP,,France,,Guadeloupe,,,,
 territory:HK,territory,Hong Kong,Hong Kong Special Administrative Region,HK,,China,,Hong Kong Rhanbarth Gweinyddol Arbennig,,"Heung Gong,
-香港",香港
-territory:IM,territory,Isle of Man,Isle of Man,IM,,United Kingdom,,Ynys Manaw,,Ellan Vannin,
-territory:MO,territory,Macao,Macao Special Administrative Region,MO,,China,,Macao Rhanbarth Gweinyddol Arbennig,,,
-territory:MQ,territory,Martinique,Martinique,MQ,,France,,Martinique,,,
-territory:YT,territory,Mayotte,Mayotte,YT,,France,,Mayotte,,,
-territory:ES-ML,territory,Melilla,Melilla,ES-ML,,Spain,,Melilla,,,
-territory:MS,territory,Montserrat,Montserrat,MS,,United Kingdom,,Montserrat,,,
-territory:NC,territory,New Caledonia,New Caledonia,NC,,France,,Caledonia newydd,,Nouvelle-Calédonie,
+香港",香港,
+territory:IM,territory,Isle of Man,Isle of Man,IM,,United Kingdom,,Ynys Manaw,,Ellan Vannin,,
+territory:MO,territory,Macao,Macao Special Administrative Region,MO,,China,,Macao Rhanbarth Gweinyddol Arbennig,,,,
+territory:MQ,territory,Martinique,Martinique,MQ,,France,,Martinique,,,,
+territory:YT,territory,Mayotte,Mayotte,YT,,France,,Mayotte,,,,
+territory:ES-ML,territory,Melilla,Melilla,ES-ML,,Spain,,Melilla,,,,
+territory:MS,territory,Montserrat,Montserrat,MS,,United Kingdom,,Montserrat,,,,
+territory:NC,territory,New Caledonia,New Caledonia,NC,,France,,Caledonia newydd,,Nouvelle-Calédonie,,
 territory:NU,territory,Niue,Niue,NU,,New Zealand,,Niue,,"Niuē,
-Niue",
+Niue",,
 territory:PN,territory,"Pitcairn, Henderson, Ducie and Oeno Islands","Pitcairn, Henderson, Ducie and Oeno Islands",PN,,United Kingdom,,"Pitcairn, Henderson, Ducie ac Oeno",,,"Pitcairn,
 Henderson,
-Ducie and Oeno Islands"
-territory:RE,territory,Réunion,Réunion,RE,,France,,Réunion,,,Reunion
-territory:BQ-SA,territory,Saba,Saba,BQ-SA,,Netherlands,,Saba,,,
+Ducie and Oeno Islands",
+territory:RE,territory,Réunion,Réunion,RE,,France,,Réunion,,,Reunion,
+territory:BQ-SA,territory,Saba,Saba,BQ-SA,,Netherlands,,Saba,,,,
 territory:BL,territory,Saint Barthélemy,Saint Barthélemy,BL,,France,,Saint Barthélemy,,,"St. Barthelemy,
-St Barth"
-territory:SH-HL,territory,Saint Helena,Saint Helena,SH-HL,,United Kingdom,,Saint Helena,,,
-territory:PM,territory,Saint Pierre and Miquelon,Saint Pierre and Miquelon,PM,,France,,Saint Pierre a Miquelon,,Saint-Pierre et Miquelon,
-territory:BQ-SE,territory,Sint Eustatius,Sint Eustatius,BQ-SE,,Netherlands,,Sint Eustatius,,,
-territory:SX,territory,Sint Maarten,Sint Maarten,SX,,Netherlands,,Sint Maarten,,,
-territory:SJ,territory,Svalbard and Jan Mayen,Svalbard and Jan Mayen,SJ,,Norway,,Svalbard a Jan Mayen,,,
+St Barth",
+territory:SH-HL,territory,Saint Helena,Saint Helena,SH-HL,,United Kingdom,,Saint Helena,,,,
+territory:PM,territory,Saint Pierre and Miquelon,Saint Pierre and Miquelon,PM,,France,,Saint Pierre a Miquelon,,Saint-Pierre et Miquelon,,
+territory:BQ-SE,territory,Sint Eustatius,Sint Eustatius,BQ-SE,,Netherlands,,Sint Eustatius,,,,
+territory:SX,territory,Sint Maarten,Sint Maarten,SX,,Netherlands,,Sint Maarten,,,,
+territory:SJ,territory,Svalbard and Jan Mayen,Svalbard and Jan Mayen,SJ,,Norway,,Svalbard a Jan Mayen,,,,
 territory:TW,territory,Taiwan,Taiwan,TW,,China,,Taiwan,,"Zhōnghuá Mínguó,
 Táiwān,
 中華民國,
-臺灣/台灣","台灣,臺灣,Chinese Taipei"
-territory:AS,territory,American Samoa,Territory of American Samoa,AS,,United States,,Tiriogaeth American Samoa,,,Eastern Samoa
-territory:CX,territory,Christmas Island,Territory of Christmas Island,CX,,Australia,,Tiriogaeth Ynys y Nadolig,,,
-territory:GU,territory,Guam,Territory of Guam,GU,,United States,,Tiriogaeth Guam,,Guåhån,
-territory:NF,territory,Norfolk Island,Territory of Norfolk Island,NF,,Australia,,Tiriogaeth Ynys Norfolk,,,
-territory:CC,territory,Cocos Islands,Territory of the Cocos (Keeling) Islands,CC,,Australia,,Tiriogaeth y Cocos (Keeling) Ynysoedd,,,
+臺灣/台灣","台灣,臺灣,Chinese Taipei",
+territory:AS,territory,American Samoa,Territory of American Samoa,AS,,United States,,Tiriogaeth American Samoa,,,Eastern Samoa,
+territory:CX,territory,Christmas Island,Territory of Christmas Island,CX,,Australia,,Tiriogaeth Ynys y Nadolig,,,,
+territory:GU,territory,Guam,Territory of Guam,GU,,United States,,Tiriogaeth Guam,,Guåhån,,
+territory:NF,territory,Norfolk Island,Territory of Norfolk Island,NF,,Australia,,Tiriogaeth Ynys Norfolk,,,,
+territory:CC,territory,Cocos Islands,Territory of the Cocos (Keeling) Islands,CC,,Australia,,Tiriogaeth y Cocos (Keeling) Ynysoedd,,,,
 territory:WF,territory,Wallis and Futuna,Territory of the Wallis and Futuna Islands,WF,,France,,Tiriogaeth y Wallis a Futuna Ynysoedd,,"Wallis-et-Futuna,
-Uvea mo Futuna",
+Uvea mo Futuna",,
 territory:IO,territory,British Indian Ocean Territory,The British Indian Ocean Territory,IO,,United Kingdom,,Tiriogaeth Brydeinig Cefnfor India,,,"I.O.T.,
-IOT"
+IOT",
 territory:PS,territory,Occupied Palestinian Territories,The Occupied Palestinian Territories,PS,,Israel,,Mae'r Tiriogaethau Meddianedig Palestina,,," فلسطين,
-Occupied Palestinian Territories"
+Occupied Palestinian Territories",
 territory:VG,territory,British Virgin Islands,The Virgin Islands,VG,,United Kingdom,,Ynysoedd y Wyryf,Virgina Islands,,"Virgin Islands,
 BVI,
-B.V.I."
-territory:TK,territory,Tokelau,Tokelau,TK,,New Zealand,,Tokelau,,,
-territory:SH-TA,territory,Tristan da Cunha,Tristan da Cunha,SH-TA,,United Kingdom,,Tristan da Cunha,,,
-territory:TC,territory,Turks and Caicos Islands,Turks and Caicos Islands,TC,,United Kingdom,,Ynysoedd Turks a Caicos,,,
-territory:VI,territory,Virgin Islands,Virgin Islands of the United States,VI,,United States,,Virgin Islands yr Unol Daleithiau,,,American Virgin Islands
-territory:EH,territory,Western Sahara,Western Sahara,EH,,,,Western Sahara,,," لصحراء الغربية,Western Sahara"
-uk:GBN,Constituent unit,Great Britain,Great Britain,GBN,,United Kingdom,country:GB,Britain Mawr,,,
-uk:NIR,Constituent unit,Northern Ireland,Northern Ireland,NIR,,United Kingdom,country:GB,Gogledd Iwerddon,,,
-uk:WLS,Constituent unit,Wales,Wales,WLS,,United Kingdom,country:GB,Cymru,,,
-uk:SCT,Constituent unit,Scotland,Scotland,SCT,,United Kingdom,country:GB,Yr Alban,,,
-uk:ENG,Constituent unit,England,England,ENG,,United Kingdom,country:GB,Lloegr,,,
-territory:BAT,territory,British Antarctic Territory,British Antarctic Territory,BAT,,United Kingdom,,Tiriogaeth Antarctig Prydain,,,
-at:1,Antarctic territory,Argentine Antarctica,Argentine Antarctica,,,Argentina,country:AR,Ariannin Antarctica,,,
-at:2,Antarctic territory,Australian Antarctic Territory,Australian Antarctic Territory,,,Australia,country:AU,Tiriogaeth Antarctig Awstralia,,,
-at:3,Antarctic territory,Chilean Antarctic Territory,Chilean Antarctic Territory,,,Chile,country:CL,Tiriogaeth Antarctig Chile,,,
-at:4,Antarctic territory,Adélie Land,Adélie Land,,,France,country:FR,Adélie Tir,,,
-at:5,Antarctic territory,Ross Dependency,Ross Dependency,,,New Zealand,country:NZ,Ross Dibyniaeth,,,
-at:6,Antarctic territory,Queen Maud Land,Queen Maud Land,,,Norway,country:NO,Queen Maud Tir,,,
-at:7,Antarctic territory,Peter I Island,Peter I Island,,,Norway,country:NO,Peter I Ynys,,,
-territory:SH-AC,territory,Ascension,Ascension Island,SH-AC,Yes,,,,,,
-territory:UM-81,territory,Baker Island,Baker Island,UM-81,Yes,,,,,,
-territory:BV,territory,Bouvet Island,Bouvet Island,BV,Yes,,,,,,
-territory:TF,territory,French Southern Territories,French Southern Territories,TF,Yes,,,,,,
-territory:UM-84,territory,Howland Island,Howland Island,UM-84,Yes,,,,,,
-territory:UM-86,territory,Jarvis Island,Jarvis Island,UM-86,Yes,,,,,,
-territory:UM-89,territory,Kingman Reef,Kingman Reef,UM-89,Yes,,,,,,
-territory:UM-67,territory,Johnston Atoll,Johnston Atoll,UM-67,Yes,,,,,,
-territory:UM-71,territory,Midway Islands,Midway Islands,UM-71,Yes,,,,,,
-territory:UM-76,territory,Navassa Island,Navassa Island,UM-76,Yes,,,,,,
-territory:UM-95,territory,Palmyra Atoll,Palmyra Atoll,UM-95,Yes,,,,,,
-territory:GS,territory,South Georgia and South Sandwich Islands,South Georgia and the South Sandwich Islands,GS,Yes,,,,,,
-territory:XQZ,territory,Akrotiri,Sovereign Base Areas of Akrotiri and Dhekelia,XQZ,Yes,,,,,,
-territory:XXD,territory,Dhekelia,Sovereign Base Areas of Akrotiri and Dhekelia,XXD,Yes,,,,,,
-territory:HM,territory,Heard Island and McDonald Islands,Territory of Heard Island and McDonald Islands,HM,Yes,,,,,,
+B.V.I.",
+territory:TK,territory,Tokelau,Tokelau,TK,,New Zealand,,Tokelau,,,,
+territory:SH-TA,territory,Tristan da Cunha,Tristan da Cunha,SH-TA,,United Kingdom,,Tristan da Cunha,,,,
+territory:TC,territory,Turks and Caicos Islands,Turks and Caicos Islands,TC,,United Kingdom,,Ynysoedd Turks a Caicos,,,,
+territory:VI,territory,Virgin Islands,Virgin Islands of the United States,VI,,United States,,Virgin Islands yr Unol Daleithiau,,,American Virgin Islands,
+territory:EH,territory,Western Sahara,Western Sahara,EH,,,,Western Sahara,,," لصحراء الغربية,Western Sahara",
+uk:GBN,Constituent unit,Great Britain,Great Britain,GBN,,United Kingdom,country:GB,Britain Mawr,,,,
+uk:NIR,Constituent unit,Northern Ireland,Northern Ireland,NIR,,United Kingdom,country:GB,Gogledd Iwerddon,,,,
+uk:WLS,Constituent unit,Wales,Wales,WLS,,United Kingdom,country:GB,Cymru,,,,
+uk:SCT,Constituent unit,Scotland,Scotland,SCT,,United Kingdom,country:GB,Yr Alban,,,,
+uk:ENG,Constituent unit,England,England,ENG,,United Kingdom,country:GB,Lloegr,,,,
+territory:BAT,territory,British Antarctic Territory,British Antarctic Territory,BAT,,United Kingdom,,Tiriogaeth Antarctig Prydain,,,,
+at:1,Antarctic territory,Argentine Antarctica,Argentine Antarctica,,,Argentina,country:AR,Ariannin Antarctica,,,,
+at:2,Antarctic territory,Australian Antarctic Territory,Australian Antarctic Territory,,,Australia,country:AU,Tiriogaeth Antarctig Awstralia,,,,
+at:3,Antarctic territory,Chilean Antarctic Territory,Chilean Antarctic Territory,,,Chile,country:CL,Tiriogaeth Antarctig Chile,,,,
+at:4,Antarctic territory,Adélie Land,Adélie Land,,,France,country:FR,Adélie Tir,,,,
+at:5,Antarctic territory,Ross Dependency,Ross Dependency,,,New Zealand,country:NZ,Ross Dibyniaeth,,,,
+at:6,Antarctic territory,Queen Maud Land,Queen Maud Land,,,Norway,country:NO,Queen Maud Tir,,,,
+at:7,Antarctic territory,Peter I Island,Peter I Island,,,Norway,country:NO,Peter I Ynys,,,,
+territory:SH-AC,territory,Ascension,Ascension Island,SH-AC,Yes,,,,,,,
+territory:UM-81,territory,Baker Island,Baker Island,UM-81,Yes,,,,,,,
+territory:BV,territory,Bouvet Island,Bouvet Island,BV,Yes,,,,,,,
+territory:TF,territory,French Southern Territories,French Southern Territories,TF,Yes,,,,,,,
+territory:UM-84,territory,Howland Island,Howland Island,UM-84,Yes,,,,,,,
+territory:UM-86,territory,Jarvis Island,Jarvis Island,UM-86,Yes,,,,,,,
+territory:UM-89,territory,Kingman Reef,Kingman Reef,UM-89,Yes,,,,,,,
+territory:UM-67,territory,Johnston Atoll,Johnston Atoll,UM-67,Yes,,,,,,,
+territory:UM-71,territory,Midway Islands,Midway Islands,UM-71,Yes,,,,,,,
+territory:UM-76,territory,Navassa Island,Navassa Island,UM-76,Yes,,,,,,,
+territory:UM-95,territory,Palmyra Atoll,Palmyra Atoll,UM-95,Yes,,,,,,,
+territory:GS,territory,South Georgia and South Sandwich Islands,South Georgia and the South Sandwich Islands,GS,Yes,,,,,,,
+territory:XQZ,territory,Akrotiri,Sovereign Base Areas of Akrotiri and Dhekelia,XQZ,Yes,,,,,,,
+territory:XXD,territory,Dhekelia,Sovereign Base Areas of Akrotiri and Dhekelia,XXD,Yes,,,,,,,
+territory:HM,territory,Heard Island and McDonald Islands,Territory of Heard Island and McDonald Islands,HM,Yes,,,,,,,
