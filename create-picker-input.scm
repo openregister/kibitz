@@ -69,7 +69,7 @@
 	    (_ (= 2 (length y)))
 	    (_ (member (car y) '("country" "territory" "uk" "david"))))
     x
-    (abort (conc x "is not a curie!"))))
+    (abort (conc x " is not a curie!"))))
 
 (define (string-list x)
   (assert (string? x))
