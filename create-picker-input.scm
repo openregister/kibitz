@@ -67,9 +67,9 @@
   (if-let* ((_ (string? x))
 	    (y (string-split x ":"))
 	    (_ (= 2 (length y)))
-	    (_ (member (car y) '("country" "territory" "uk" "david"))))
+	    (_ (member (car y) '("country" "territory" "uk" "at"))))
     x
-    (abort (conc x "is not a curie!"))))
+    (abort (conc x " is not a curie!"))))
 
 (define (string-list x)
   (assert (string? x))
@@ -372,15 +372,14 @@
     ("Name"                     ,string      ())
     ("Official-name"            ,ignore      ())
     ("Code"                     ,ignore      ())
+    ("Excluded"                 ,ignore      ())
     ("Territory belongs to"     ,ignore      ())
     ("Territory belongs to code",curie-list  (,child-of))
     ("Welsh"                    ,string      (,welsh))
     ("Passport applicant typos" ,string-list (,(nyms display-name: #f)))
     ("Endonyms"                 ,string-list (,(nyms display-name: #t)))
-    ("Baymard synonyms"         ,string-list (,(nyms display-name: #t)))
-    ("\"The\" removed"          ,ignore      ())
-    ("Words API synonyms"       ,string-list (,(nyms display-name: #f)))
-    ("FCO Synonyms"             ,string-list (,(nyms display-name: #t)))))
+    ("Combined Synonyms"        ,string-list (,(nyms display-name: #t)))
+    ("DWP Synonyms"             ,ignore      ())))
 
 
 
