@@ -204,6 +204,7 @@ add-item	{"citizen-names":"Gambian","country":"GM","name":"The Gambia","official
 add-item	{"citizen-names":"Chadian","country":"TD","name":"Chad","official-name":"The Republic of Chad"}
 add-item	{"citizen-names":"Egyptian","country":"EG","name":"Egypt","official-name":"The Arab Republic of Egypt"}
 add-item	{"citizen-names":"Czech","country":"CZ","name":"Czechia","official-name":"The Czech Republic","start-date":"1993-01-01"}
+add-item	{"citizen-names":"Gambian","country":"GM","name":"The Gambia","official-name":"The Republic of The Gambia"}
 append-entry	2016-04-05T13:23:05Z	sha-256:e94c4a9ab00d951dadde848ee2c9fe51628b22ff2e0a88bff4cca6e4e6086d7a	SU
 append-entry	2016-04-05T13:23:05Z	sha-256:e03f97c2806206cdc2cc0f393d09b18a28c6f3e6218fc8c6f3aa2fdd7ef9d625	DE
 append-entry	2016-04-05T13:23:05Z	sha-256:e1357671d0da24668952373d0cdf9f7659a1b155e45c8fb3c2f24331e46edc26	DD
@@ -409,4 +410,5 @@ append-entry	2016-04-05T13:23:05Z	sha-256:dac66e05ee41707ff9115ed72705eaf8c2e017
 append-entry	2016-04-05T13:23:05Z	sha-256:a77f1e11270aab0c5bf315b2e7c268a7aff89713578020e1b4183c6df2b2c0e7	BS
 append-entry	2016-04-05T13:23:05Z	sha-256:466d194d5100532edd115e3f0035967b09bc7b7f5fc444166df6f4a5f7cb9127	VA
 append-entry	2016-11-11T16:25:07Z	sha-256:c69c04fff98c59aabd739d43018e87a25fd51a00c37d100721cc68fa9003a720	CZ
-assert-root-hash	sha-256:527c1acd5a9a57c2794777210ae350a2068552105a646ccb5465da1173dfdb58
+append-entry	2017-03-29T14:22:30Z	sha-256:0429375c4fb403288ef816e5dd38a24f192e35b8f55e40cc6266eb25eaef77b1	GM
+assert-root-hash	sha-256:6fec13fdc83d6967357430a1b4159c9ddf22e5e6a934e0d18e6c98342dd54655
