@@ -31,12 +31,12 @@
 
 (define make-demo-csv-reader
   (make-csv-reader-maker '((separator-chars #\,)
-			   (strip-leading-whitespace?  . #t)
-			   (strip-trailing-whitespace? . #t))))
+                           (strip-leading-whitespace?  . #t)
+                           (strip-trailing-whitespace? . #t))))
 
 (define next-row
- (make-demo-csv-reader
-  (open-input-file filename)))
+  (make-demo-csv-reader
+    (open-input-file filename)))
 
 ; Take a list of field names and a csv-xml's next-row procedure and return a
 ; procedure that, when called, returns the next row as an alist.
@@ -45,8 +45,8 @@
   (lambda ()
     (let ((next-row (next-row)))
       (if (null? next-row)
-	next-row
-	(zip-alist field-names next-row)))))
+        next-row
+        (zip-alist field-names next-row)))))
 
 ; first row is field names
 (define next-location (next-csv-row-as-alist-maker (next-row) next-row))
@@ -65,11 +65,11 @@
 
 (define (curie x)
   (if-let* ((_ (string? x))
-	    (y (string-split x ":"))
-	    (_ (= 2 (length y)))
-	    (_ (member (car y) '("country" "territory" "uk" "david"))))
-    x
-    (abort (conc x "is not a curie!"))))
+            (y (string-split x ":"))
+            (_ (= 2 (length y)))
+            (_ (member (car y) '("country" "territory" "uk" "david"))))
+           x
+           (abort (conc x "is not a curie!"))))
 
 (define (string-list x)
   (assert (string? x))
@@ -171,15 +171,15 @@
 ; Defaults for the node
 (define node-default
   '((names .
-	   ((en-GB . #f)
-	    (cy    . #f)))
+           ((en-GB . #f)
+            (cy    . #f)))
     (meta  .
-	   ((canonical      . #f)
-	    (canonical-mask . 0)
-	    (stable-name    . #f)
-	    (display-name   . #f)))
+           ((canonical      . #f)
+            (canonical-mask . 0)
+            (stable-name    . #f)
+            (display-name   . #f)))
     (edges .
-	   ((from . #())))))
+           ((from . #())))))
 
 (define (node-ref path node)
 
@@ -189,19 +189,19 @@
 
   (or
     (alist-ref (second path)
-	       (alist-ref (first path) node))
+               (alist-ref (first path) node))
     (alist-ref (second path)
-	       (alist-ref (first path) node-default))))
+               (alist-ref (first path) node-default))))
 
 (define (update-node node
-		     #!key
-		     (name-en-GB     (node-ref '(names en-GB)          node))
-		     (name-cy        (node-ref '(names cy)             node))
-		     (canonical      (node-ref '(meta  canonical)      node))
-		     (canonical-mask (node-ref '(meta  canonical-mask) node))
-		     (stable-name    (node-ref '(meta  stable-name)    node))
-		     (display-name   (node-ref '(meta  display-name)   node))
-		     (edges-from     (node-ref '(edges from)           node)))
+                     #!key
+                     (name-en-GB     (node-ref '(names en-GB)          node))
+                     (name-cy        (node-ref '(names cy)             node))
+                     (canonical      (node-ref '(meta  canonical)      node))
+                     (canonical-mask (node-ref '(meta  canonical-mask) node))
+                     (stable-name    (node-ref '(meta  stable-name)    node))
+                     (display-name   (node-ref '(meta  display-name)   node))
+                     (edges-from     (node-ref '(edges from)           node)))
 
   (assert (string? name-en-GB))
   (assert (or (string? name-cy) (not name-cy)))
@@ -213,15 +213,15 @@
   (assert (or (equal? #() edges-from) (vector-fold (lambda (i s v) (and s (string? v))) #t edges-from)))
 
   `((names .
-	   ((en-GB . ,name-en-GB)
-	    (cy    . ,name-cy)))
+           ((en-GB . ,name-en-GB)
+            (cy    . ,name-cy)))
     (meta  .
-	   ((canonical      . ,canonical)
-	    (canonical-mask . ,canonical-mask)
-	    (stable-name    . ,stable-name)
-	    (display-name   . ,display-name)))
+           ((canonical      . ,canonical)
+            (canonical-mask . ,canonical-mask)
+            (stable-name    . ,stable-name)
+            (display-name   . ,display-name)))
     (edges .
-	   ((from . ,edges-from)))))
+           ((from . ,edges-from)))))
 
 (define (has-edge? edge edges)
   (vector-fold
@@ -241,15 +241,15 @@
 
 (define (add-edge from to state)
   (let* ((node       (state-ref from state))
-	 (edges-from (node-ref '(edges from) node)))
+         (edges-from (node-ref '(edges from) node)))
     (if (has-edge? to edges-from)
       (begin
-	;(warn "Edge already exists between ~S and ~S. ~S" from to node)
-	state)
+        ;(warn "Edge already exists between ~S and ~S. ~S" from to node)
+        state)
       (state-update from
-		    (update-node node
-				 edges-from: (edges-cons to edges-from))
-		    state))))
+                    (update-node node
+                                 edges-from: (edges-cons to edges-from))
+                    state))))
 
 ; Add a node to the graph that represents a -nym for another node.
 ;   for          - The id of the node to add the nym for.
@@ -258,47 +258,47 @@
 ;   state        - The graph.
 (define (add-nym for nym display-name state)
   (let* ((nym-id   (conc "nym:" nym))
-	 (nym-node (state-ref nym-id state)))
+         (nym-node (state-ref nym-id state)))
     (if nym-node
       (let ((names-en-GB       (node-ref '(names en-GB)        nym-node))
-	    (meta-display-name (node-ref '(meta  display-name) nym-node)))
-	(cond ; If the node is found, check if it's the same or if it needs to be upgraded to displayable.
-	  ((and ; important parts of node match
-	     (equal? names-en-GB       nym)
-	     (equal? meta-display-name display-name))
-	   ; just add the edge
-	   (add-edge nym-id for state))
-	  ((and ; name matches and current node is displayable
-	     (equal? names-en-GB nym)
-	     meta-display-name
-	     (not display-name))
-	   ; just add the edge
-	   (add-edge nym-id for state))
-	  ((and ; name matches and current node is not displayable
-	     (equal? names-en-GB nym)
-	     (not meta-display-name)
-	     display-name)
-	   ; make it displayable and add the edge
-	   (add-edge nym-id for
-		     (state-update
-		       nym-id
-		       (update-node
-			 nym-node
-			 display-name: display-name)
-		       state)))
-	  (else
-	    (error "Node for ~S already exists but does not match." nym-id))))
+            (meta-display-name (node-ref '(meta  display-name) nym-node)))
+        (cond ; If the node is found, check if it's the same or if it needs to be upgraded to displayable.
+          ((and ; important parts of node match
+             (equal? names-en-GB       nym)
+             (equal? meta-display-name display-name))
+           ; just add the edge
+           (add-edge nym-id for state))
+          ((and ; name matches and current node is displayable
+             (equal? names-en-GB nym)
+             meta-display-name
+             (not display-name))
+           ; just add the edge
+           (add-edge nym-id for state))
+          ((and ; name matches and current node is not displayable
+             (equal? names-en-GB nym)
+             (not meta-display-name)
+             display-name)
+           ; make it displayable and add the edge
+           (add-edge nym-id for
+                     (state-update
+                       nym-id
+                       (update-node
+                         nym-node
+                         display-name: display-name)
+                       state)))
+          (else
+            (error "Node for ~S already exists but does not match." nym-id))))
       (state-update
-	nym-id
-	(update-node
-	  (make-node)
-	  name-en-GB:     nym
-	  canonical-mask: 0
-	  canonical:      #f
-	  stable-name:    #t
-	  display-name:   display-name
-	  edges-from:     `#(,for))
-	state))))
+        nym-id
+        (update-node
+          (make-node)
+          name-en-GB:     nym
+          canonical-mask: 0
+          canonical:      #f
+          stable-name:    #t
+          display-name:   display-name
+          edges-from:     `#(,for))
+        state))))
 
 
 
@@ -321,8 +321,8 @@
     (state-update
       country-id
       (update-node
-	node
-	name-cy: welsh-name)
+        node
+        name-cy: welsh-name)
       state)))
 
 
@@ -336,11 +336,11 @@
       (assert node (conc "nyms: No node for " country-id))
 
       (fold
-	(lambda (nym state)
-	  (assert (string? nym))
-	  (add-nym country-id nym display-name state))
-	state
-	nyms))))
+        (lambda (nym state)
+          (assert (string? nym))
+          (add-nym country-id nym display-name state))
+        state
+        nyms))))
 
 
 (define (child-of state country-id col-name parents)
@@ -352,9 +352,9 @@
 
     (fold
       (lambda (parent state)
-	(assert (curie parent))
-	(assert (state-ref country-id state) (conc "child-of: No node for " parent))
-	(add-edge country-id parent state))
+        (assert (curie parent))
+        (assert (state-ref country-id state) (conc "child-of: No node for " parent))
+        (add-edge country-id parent state))
       state
       parents)))
 
@@ -396,45 +396,45 @@
   (let ((register-symbol (string->symbol register-name)))
     (fold
       (lambda (v s)
-	(let ((pk      (car v))
-	      (item    (cdr v))
-	      (node-id (conc register-name ":" (car v))))
-	  (if (not (equal? pk (item-ref register-symbol item)))
-	    (warn "Item key for record ~S in ~S does not match record key: might be an index." pk register-name))
-	  (if (state-ref node-id s)
-	    (error "Node for ~S already exists in graph." node-id))
-	  (let* ((s (add-node
-		      s                              ; state
-		      canonical                      ; canonical
-		      node-id                        ; node-id
-		      (item-ref 'name item)          ; name-en-GB
-		      (item-ref 'official-name item) ; official-name
-		      (if canonical 1 0)             ; canonical-mask
-		      #t                             ; stable-name
-		      #t))                           ; display-name
-		 (s ; add the country code
-		   (add-nym node-id (item-ref register-symbol item) #t s)))
-	    s)))
+        (let ((pk      (car v))
+              (item    (cdr v))
+              (node-id (conc register-name ":" (car v))))
+          (if (not (equal? pk (item-ref register-symbol item)))
+            (warn "Item key for record ~S in ~S does not match record key: might be an index." pk register-name))
+          (if (state-ref node-id s)
+            (error "Node for ~S already exists in graph." node-id))
+          (let* ((s (add-node
+                      s                              ; state
+                      canonical                      ; canonical
+                      node-id                        ; node-id
+                      (item-ref 'name item)          ; name-en-GB
+                      (item-ref 'official-name item) ; official-name
+                      (if canonical 1 0)             ; canonical-mask
+                      #t                             ; stable-name
+                      #t))                           ; display-name
+                 (s ; add the country code
+                   (add-nym node-id (item-ref register-symbol item) #t s)))
+            s)))
       state
       records)))
 
 (define (add-node state canonical node-id name-en-GB official-name canonical-mask stable-name display-name)
   (let* ((s state)
-	 (s ; add the node to the graph
-	   (state-update
-	     node-id
-	     (update-node
-	       (make-node)
-	       name-en-GB:     name-en-GB
-	       canonical-mask: canonical-mask
-	       canonical:      canonical
-	       stable-name:    stable-name
-	       display-name:   display-name)
-	     s))
-	 (s ; add the official-name if it's different
-	   (if (or (not official-name) (equal? official-name name-en-GB))
-	     s
-	     (add-nym node-id official-name display-name s))))
+         (s ; add the node to the graph
+           (state-update
+             node-id
+             (update-node
+               (make-node)
+               name-en-GB:     name-en-GB
+               canonical-mask: canonical-mask
+               canonical:      canonical
+               stable-name:    stable-name
+               display-name:   display-name)
+             s))
+         (s ; add the official-name if it's different
+           (if (or (not official-name) (equal? official-name name-en-GB))
+             s
+             (add-nym node-id official-name display-name s))))
     s))
 
 
@@ -446,10 +446,10 @@
   (fold
     (lambda (r s)
       (add-nodes-from-records
-	s
-	(second r)  ; canonical?
-	(first r)   ; register-name
-	(third r))) ; records
+        s
+        (second r)  ; canonical?
+        (first r)   ; register-name
+        (third r))) ; records
     (state)
     `(("country"   #t ,(rsf->records "data/country.rsf"))
       ("territory" #t ,(rsf->records "data/territory.rsf"))
@@ -469,38 +469,38 @@
     ;(pp row)
     ;(newline)
     (let* ((row-name (row-key-convert (alist-ref row-key row equal?)))
-	   (the-state (state))
-	   (the-state
-	     ; Ensure that this node exists in the graph
-	     (if (state-ref row-name the-state)
-	       the-state
-	       (begin
-		 (warn "Found node in spreadsheet that does not appear in the registers: ~S!" row-name)
-		 (add-node
-		   the-state
-		   #f ; canonical
-		   row-name ; node-id
-		   ((col-spec-convert (col-spec-ref "Name" col-spec))          (alist-ref "Name" row equal?)) ; name-en-GB
-		   ((col-spec-convert (col-spec-ref "Official-name" col-spec)) (alist-ref "Name" row equal?)) ; official-name
-		   0; canonical-mask
-		   #f ; stable-name
-		   #t)))) ; display-name
-	   (the-state
-	     (fold ; process each field in the row
-	       (lambda (col state)
-		 (let* ((col-name  (car col))
-			(col-spec  (col-spec-ref col-name col-spec))
-			(_         (assert col-spec (conc "Could not find col-spec for " col-name)))
-			(convert   (col-spec-convert col-spec))
-			(actions   (col-spec-actions col-spec))
-			(col-value (convert (cdr col))))
-		   (fold
-		     (lambda (action state)
-		       (action state row-name col-name col-value))
-		     state
-		     actions)))
-	       the-state
-	       row)))
+           (the-state (state))
+           (the-state
+             ; Ensure that this node exists in the graph
+             (if (state-ref row-name the-state)
+               the-state
+               (begin
+                 (warn "Found node in spreadsheet that does not appear in the registers: ~S!" row-name)
+                 (add-node
+                   the-state
+                   #f ; canonical
+                   row-name ; node-id
+                   ((col-spec-convert (col-spec-ref "Name" col-spec))          (alist-ref "Name" row equal?)) ; name-en-GB
+                   ((col-spec-convert (col-spec-ref "Official-name" col-spec)) (alist-ref "Name" row equal?)) ; official-name
+                   0; canonical-mask
+                   #f ; stable-name
+                   #t)))) ; display-name
+           (the-state
+             (fold ; process each field in the row
+               (lambda (col state)
+                 (let* ((col-name  (car col))
+                        (col-spec  (col-spec-ref col-name col-spec))
+                        (_         (assert col-spec (conc "Could not find col-spec for " col-name)))
+                        (convert   (col-spec-convert col-spec))
+                        (actions   (col-spec-actions col-spec))
+                        (col-value (convert (cdr col))))
+                   (fold
+                     (lambda (action state)
+                       (action state row-name col-name col-value))
+                     state
+                     actions)))
+               the-state
+               row)))
       (state the-state)))
   next-location)
 
