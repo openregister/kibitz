@@ -483,10 +483,12 @@
              (fold ; process each field in the row
                (lambda (col state)
                  (let* ((col-name  (car col))
-                        (col-spec  (col-spec-ref col-name col-spec))
-                        (_         (assert col-spec (conc "Could not find col-spec for " col-name)))
-                        (convert   (col-spec-convert col-spec))
-                        (actions   (col-spec-actions col-spec))
+                        (col-spec* (col-spec-ref col-name col-spec))
+                        (_         (assert col-spec* (sprintf "~A~S~A~A~S~A~A~S\n" "Could not find col-spec for " col-name ".\n\n"
+						     "       Spreadsheet columns are: " (map car row) "\n\n"
+						     "       ...and we have col-specs for: " (map car col-spec))))
+                        (convert   (col-spec-convert col-spec*))
+                        (actions   (col-spec-actions col-spec*))
                         (col-value (convert (cdr col))))
                    (fold
                      (lambda (action state)
