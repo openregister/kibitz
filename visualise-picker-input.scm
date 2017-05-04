@@ -8,12 +8,12 @@
     (values #f (wait-signal rc))
     (values #t (wait-exit-status rc))))
 
-(define (generate-pdf graphviz-input output)
+(define (generate-pdf graphviz-input)
   (let-values (((fd temp-path) (file-mkstemp "/tmp/gengraph.XXXXXX")))
               (let ((temp-port (open-output-file* fd)))
                 (fprintf temp-port "~A" graphviz-input)
                 (close-output-port temp-port))
-              (receive (ok ec) (process-status (system (sprintf "ccomps -x ~A | dot | gvpack |neato -Tpdf -n2 -o ~A" temp-path output)))
+              (receive (ok ec) (process-status (system (sprintf "ccomps -x ~A | dot | gvpack |neato -Tpdf -n2" temp-path)))
                        (assert (and ok (= 0 ec))))))
 
 
@@ -85,7 +85,7 @@
 
 
 
-      (generate-pdf graphviz-input "out.pdf")
+      (generate-pdf graphviz-input)
 
       (exit)
 
