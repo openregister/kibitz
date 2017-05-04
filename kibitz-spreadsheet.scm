@@ -144,8 +144,8 @@
 		     ;        David's Spreadsheet. i.e. that columns called
 		     ;        "Name" and "Official-name" are present and
 		     ;        contain what we think they contain.
-		     (let* ((name-en-GB    ((col-spec-convert (col-spec-ref "Name" col-spec))          (alist-ref "Name" row equal?)))
-			    (official-name ((col-spec-convert (col-spec-ref "Official-name" col-spec)) (alist-ref "Name" row equal?)))
+		     (let* ((name-en-GB    ((col-spec-convert (col-spec-ref "Name" col-spec))          (alist-ref "Name"          row equal?)))
+			    (official-name ((col-spec-convert (col-spec-ref "Official-name" col-spec)) (alist-ref "Official Name" row equal?)))
 			    (s the-state)
 			    (s (state-update
 				 row-name
