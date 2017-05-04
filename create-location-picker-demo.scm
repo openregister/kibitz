@@ -1,5 +1,5 @@
-; csi -s create-picker-input.scm data/Location\ picker\ data\ -\ Data.csv
-; csi -s create-picker-input.scm data/Location\ picker\ data\ -\ Data.csv | csi -s ./visualise-picker-input.scm
+; csi -s create-location-picker-demo.scm data/Location\ picker\ data\ -\ Data.csv
+; csi -s create-location-picker-demo.scm data/Location\ picker\ data\ -\ Data.csv | csi -s ./visualise-picker-input.scm
 
 (require-extension utf8)
 
