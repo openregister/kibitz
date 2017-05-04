@@ -1,3 +1,4 @@
+(require-extension utf8)
 (use posix srfi-1 irregex)
 
 (define (process-status rc)
